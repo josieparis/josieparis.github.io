@@ -81,13 +81,25 @@ back, change `--font-body` and the Google Fonts link in `_includes/head.html`.
 
 ## Preview locally
 
+Jekyll needs Ruby 3.1+. macOS ships Ruby 2.6, which is too old — its `ffi` and `json`
+gems refuse to install. A conda env named `jekyll` is already set up on this machine
+with Ruby 4.0, Jekyll 4.4, and the two plugins:
+
 ```bash
-bundle install
-bundle exec jekyll serve --livereload
+conda activate jekyll && jekyll serve --livereload
 ```
 
 Then open <http://localhost:4000>. Pages rebuild as you save; `_config.yml` changes
 need a restart.
+
+If you ever need to rebuild that env from scratch:
+
+```bash
+conda create -y -n jekyll -c conda-forge 'ruby>=3.1' clang_osx-64 clangxx_osx-64 && conda run -n jekyll gem install jekyll jekyll-seo-tag jekyll-sitemap
+```
+
+The compilers are needed because conda's Ruby builds native gems with its own toolchain.
+`brew install ruby` works too if you'd rather not use conda.
 
 ## Publishing on GitHub Pages
 

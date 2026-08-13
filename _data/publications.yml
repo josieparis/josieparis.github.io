@@ -200,7 +200,7 @@ published:
   - year: 2020
     authors: "Fraser BA, Whiting JR, Paris JR, Weadick CJ, Parsons PJ, Charlesworth D, Bergero R, Bemm F, Hoffmann M, Kottler VA, Liu C, Dreyer C, Weigel D"
     title: "Improved reference genome uncovers novel sex-linked regions in the guppy (Poecilia reticulata)"
-    venue: "Genome Biology and Evolution, evaa187"
+    venue: "Genome Biology and Evolution, 12(10): 1789-1805"
     doi: "https://doi.org/10.1093/gbe/evaa187"
     projects: [guppies]
 
