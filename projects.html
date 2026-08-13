@@ -1,0 +1,34 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+lede: Take a look at some of my past and ongoing projects.
+---
+
+<ul class="project-grid">
+  {%- assign projects = site.projects | sort: "order" -%}
+  {%- for project in projects -%}
+  <li>
+    <a class="project-card" href="{{ project.url | relative_url }}">
+      {%- if project.image -%}
+      <div class="project-card__media">
+        <img src="{{ project.image | prepend: '/assets/img/' | relative_url }}"
+             alt="{{ project.image_alt | default: project.title }}" loading="lazy">
+      </div>
+      {%- endif -%}
+      <div class="project-card__body">
+        <h2 class="project-card__title">{{ project.title }}</h2>
+        {%- if project.species %}<p class="project-card__species">{{ project.species }}</p>{% endif -%}
+      </div>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
+
+<h2>Also in the mix</h2>
+<p class="pub-section__note">Work I've been part of that doesn't have a write-up here yet.</p>
+<ul class="project-more">
+  {%- for p in site.data.more_projects -%}
+  <li><b>{{ p.title }}</b>{% if p.note %} — {{ p.note }}{% endif %}</li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,59 @@
+# --- Site identity -----------------------------------------------------------
+title: Josie Paris
+tagline: Evolutionary biologist
+description: >-
+  Josie Paris is an evolutionary biologist using analytical approaches at the
+  forefront of ecological genomics to integrate knowledge of adaptation into
+  understanding the dynamics of wild animal populations.
+author: Josie Paris
+
+# --- Where the site lives ----------------------------------------------------
+# If you publish to https://<username>.github.io  -> leave baseurl empty.
+# If you publish to https://<username>.github.io/<repo>  -> set baseurl: "/<repo>".
+# Set `url` once you know it; it is only used for absolute links (SEO, sitemap).
+url: ""
+baseurl: ""
+
+# --- Contact / links ---------------------------------------------------------
+# The email is kept split so it renders as "parisjosephine <at> gmail.com",
+# the same anti-scraper trick the old Wix site used. Swap in a normal
+# `mailto:` in _includes/footer.html if you'd rather have a clickable link.
+email_user: parisjosephine
+email_domain: gmail.com
+
+social:
+  twitter: https://twitter.com/josephine_paris
+  scholar: https://scholar.google.com/citations?hl=en&user=Z2-h0oIAAAAJ&view_op=list_works
+
+# --- Collections -------------------------------------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+# --- Build -------------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache

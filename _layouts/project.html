@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="page-header">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ '/projects/' | relative_url }}">Projects</a></p>
+    <h1 class="page-header__title page-header__title--sm">{{ page.headline | default: page.title }}</h1>
+    {%- if page.species %}<p class="page-header__lede"><em>{{ page.species }}</em></p>{% endif -%}
+  </div>
+</div>
+
+<div class="wrap project">
+  <div class="project__grid">
+    <div class="project__body">
+      {%- if page.context %}<p class="project__context">{{ page.context | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif -%}
+
+      {{ content }}
+
+      {%- assign pubs = site.data.publications.published | where_exp: "p", "p.projects contains page.slug" -%}
+      {%- assign reviews = site.data.publications.in_review | where_exp: "p", "p.projects contains page.slug" -%}
+      {%- if pubs.size > 0 or reviews.size > 0 -%}
+        <h2 id="publications">Publications</h2>
+        <ol class="pubs">
+          {%- for pub in reviews -%}{% include pub.html pub=pub status="In review" %}{%- endfor -%}
+          {%- for pub in pubs -%}{% include pub.html pub=pub %}{%- endfor -%}
+        </ol>
+      {%- endif -%}
+    </div>
+
+    <aside class="project__aside">
+      {%- if page.image -%}
+        <img class="project__image"
+             src="{{ page.image | prepend: '/assets/img/' | relative_url }}"
+             alt="{{ page.image_alt | default: page.title }}"
+             loading="lazy">
+      {%- endif -%}
+
+      {%- if page.funders -%}
+        <div class="funders">
+          <h2 class="funders__heading">Funding &amp; partners</h2>
+          <ul class="funders__list">
+            {%- for f in page.funders -%}
+              <li>
+                {%- if f.url -%}<a href="{{ f.url }}" rel="noopener" target="_blank">{%- endif -%}
+                <img src="{{ f.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ f.name }}" loading="lazy">
+                {%- if f.url -%}</a>{%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </aside>
+  </div>
+</div>

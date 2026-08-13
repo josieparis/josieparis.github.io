@@ -1,0 +1,33 @@
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span class="brand__name">{{ site.title }}</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav__list">
+        {%- for item in site.data.nav -%}
+          {%- assign is_active = false -%}
+          {%- if item.url == '/' -%}
+            {%- if page.url == '/' -%}{%- assign is_active = true -%}{%- endif -%}
+          {%- elsif page.url contains item.url -%}
+            {%- assign is_active = true -%}
+          {%- endif -%}
+          <li>
+            <a href="{{ item.url | relative_url }}"
+               class="nav__link{% if is_active %} is-active{% endif %}"
+               {% if is_active %}aria-current="page"{% endif %}>{{ item.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

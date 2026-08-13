@@ -1,0 +1,13 @@
+# Projects listed on the site that don't have a write-up page yet.
+# When one gets a page, move it into _projects/ as a Markdown file and
+# delete it from here.
+- title: Italian sparrows
+  note: Convergent adaptation to urban environments
+- title: Lobsters
+  note: Reference genome and expression atlas for the European lobster
+- title: Salmonids
+  note: Population genetics of brown trout and Atlantic salmon
+- title: Shearwaters
+  note: Speciation and population structure in pelagic seabirds
+- title: Bees
+  note: Genomics of wild and commercial bumblebees

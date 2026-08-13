@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <img class="hero__portrait"
+         src="{{ '/assets/img/josie-portrait.jpg' | relative_url }}"
+         alt="Josie Paris"
+         width="600" height="600">
+
+    <div>
+      <h1 class="hero__title">Hello!</h1>
+      <p class="hero__text">
+        I am an evolutionary biologist using analytical approaches at the forefront of
+        <strong>ecological genomics</strong> in order to integrate knowledge of adaptation
+        into understanding the dynamics of wild animal populations.
+      </p>
+      <p class="hero__text">Check out the links below for more info! :)</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <ul class="cards">
+    <li>
+      <a class="card" href="{{ '/projects/' | relative_url }}">
+        <h2 class="card__title">Projects</h2>
+        <p class="card__text">Past and ongoing work — King penguins, Trinidadian guppies, Mediterranean lizards, and more.</p>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="{{ '/publications/' | relative_url }}">
+        <h2 class="card__title">Publications</h2>
+        <p class="card__text">Papers and preprints, plus what is currently in review and in the pipeline.</p>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="{{ '/cv/' | relative_url }}">
+        <h2 class="card__title">CV</h2>
+        <p class="card__text">Academic history, employment, education, grants, awards, and teaching.</p>
+      </a>
+    </li>
+  </ul>
+</div>

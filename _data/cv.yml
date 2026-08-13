@@ -1,0 +1,156 @@
+# ---------------------------------------------------------------------------
+# Everything on the CV page except the "Academic history" prose,
+# which lives in cv.html itself.
+# ---------------------------------------------------------------------------
+
+employment:
+  - role: Research Scientist
+    org: Colorado State University, USA
+    dates: upcoming …
+    pi: Chris Funk
+    topic: Genomics of Chronic Wasting Disease in mule deer
+    image: cv-mule-deer.jpg
+
+  - role: Visiting Researcher
+    org: Colorado State University, USA
+    dates: May 2025 – present
+    pi: Kristen Ruegg
+    topic: Demographic history of rosy finches
+    image: cv-rosy-finch.jpg
+
+  - role: Affiliated Researcher
+    org: University of Milan, Italy
+    dates: Aug 2025 – Oct 2025
+    pi: Carlo Polidori
+    topic: Convergent adaptation to urban environments in the Italian sparrow
+    image: cv-sparrow.png
+
+  - role: Marie Skłodowska-Curie Fellowship
+    org: Marche Polytechnic University, Italy
+    dates: May 2023 – May 2025
+    pi: Emiliano Trucchi
+    topic: Genomic adaptation to climate change in King penguins
+    image: cv-king-penguin.png
+
+  - role: Postdoc
+    org: University of Exeter, UK (remote)
+    dates: Feb 2023 – May 2023
+    pi: Jamie Stevens
+    topic: Population genetics of salmonids
+    image: cv-salmon.jpeg
+
+  - role: Postdoc
+    org: University of L'Aquila, Italy
+    dates: Feb 2022 – Feb 2023
+    pi: Daniele Salvi
+    topic: Population genomics of Mediterranean reptiles
+    image: cv-lizard.jpg
+
+  - role: Postdoc
+    org: University of Exeter, UK (remote)
+    dates: Jul 2021 – Jan 2022
+    pi: Eduarda Santos
+    topic: Reference genome of the European lobster
+    image: cv-lobster.jpg
+
+  - role: Postdoc
+    org: University of Exeter, UK
+    dates: Oct 2017 – Jun 2022
+    pi: Bonnie Fraser
+    topic: Genomics of adaptive polymorphism (NFDS) in the Trinidadian guppy
+    image: cv-guppies.jpg
+
+  - role: Graduate Research Assistant
+    org: University of Exeter, UK
+    dates: March 2017 – Jun 2017
+    pi: Chris Thornton
+    topic: Generation of lateral flow devices (LFDs) to detect Bd
+    image: cv-frogs.jpg
+
+professional:
+  - title: Director of the Workshop on Genomics, Český Krumlov, Czech Republic
+    meta: Two weeks, annually — 2023, 2024, 2025, 2026
+    body: >-
+      I am the Director of the international Workshop on Genomics, which delivers
+      advanced training in bioinformatics analysis of genomic data to ~70
+      participants from ~15 countries annually.
+    link_text: See the 2025 program
+    link_url: https://evomics.org/2025-workshop-on-genomics/
+
+  - title: Genomics Consultant for the National Oceanic and Atmospheric Administration (NOAA)
+    body: >-
+      I am sub-contracted to provide consultancy, genomics analyses, and advice and
+      interpretation for several projects involving the generation and use of genomic
+      data for legal and mitigation purposes for damage and injury cases.
+
+education:
+  - degree: PhD in Molecular Ecology and Evolution
+    dates: September 2012 – April 2017
+    thesis: "Brown trout and toxic metals: local adaptation to the legacy of Britain's mining history"
+    org: University of Exeter
+
+  - degree: BSc in Ecology and Conservation
+    dates: 2009 – 2012
+    org: University of Sussex
+
+secondments:
+  - year: 2022
+    body: >-
+      Two-week research secondment with Prof. Dan MacQueen & Dr. Tim Bean
+      (Roslin Institute, Edinburgh, UK), to collaborate with members of The Roslin
+      Institute to generate the first reference genome of the European lobster
+      (Homarus gammarus). Output: Paris et al. 2025, bioRxiv.
+
+  - year: 2019
+    body: >-
+      Two-week research secondment with Prof. Christopher Wheat (Stockholm
+      University, Sweden), to analyse pool-seq data to detect signatures of colour
+      polymorphism. Publication: Paris et al. 2022, Nature Communications.
+
+  - year: 2016
+    body: >-
+      Three-month research secondment with Dr Julian Catchen (University of Illinois
+      Urbana-Champaign, USA), to develop methods for accurate locus recovery in
+      RAD-seq. Publication: Paris et al. 2017, Methods in Ecology and Evolution.
+
+# NOTE: the old Wix page laid these out as a two-column year/award table.
+# The groupings below follow the row alignment of that table — worth a
+# quick check that 2016 is right, since it carries the most entries.
+awards:
+  - year: 2022
+    items:
+      - "Grant: European Union Marie Skłodowska-Curie Actions (188,542 EUR)"
+  - year: 2019
+    items:
+      - "Genetics Society Training Grant (£500)"
+  - year: 2017
+    items:
+      - "'Lost in Parameter Space', 2017, Paris, Stevens, Catchen. Top Downloaded Article 2017-2018 and top 20 most read paper in Methods in Ecology and Evolution"
+  - year: 2016
+    items:
+      - "Genetics Society Training Grant (£500)"
+      - "FSBI Small Research Grant (£4900)"
+      - "University of Exeter Research Enhancement Fund (£480)"
+      - "Genetics Society Training Grant (£700)"
+      - "Santander Postgraduate Research Award (£500)"
+      - "Award nomination: Linnean Society of London nomination for The Bicentenary Medal"
+  - year: 2015
+    items:
+      - "FSBI Small Research Grant (£1000)"
+      - "GBS Workshop Funding, The Genome Analysis Centre (TGAC) (€800)"
+      - "University of Exeter Research Enhancement Fund (£500)"
+  - year: 2014
+    items:
+      - "Genetics Society Junior Scientist Travel Grant (£750)"
+  - year: 2013
+    items:
+      - "NoWPaS 2013 Conference Committee (£21,000, as a committee of six)"
+  - year: 2012
+    items:
+      - "John Maynard Smith Award for Ecology and Conservation (2012), University of Sussex"
+
+other:
+  - "Director of the Workshop on Genomics (2023–present)"
+  - "Co-Director for the Workshop on Genomics (2018–present)"
+  - "Teaching Assistant for the Workshop on Genomics (2015–2018)"
+  - "Graduate Teaching Assistant, Coral Reef Field Course, The Bahamas, University of Exeter (2013–2018)"

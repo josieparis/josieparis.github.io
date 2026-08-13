@@ -1,0 +1,258 @@
+# ---------------------------------------------------------------------------
+# Publications.
+#
+# Three lists: `pipeline` (in prep), `in_review`, and `published`.
+# To add a paper, copy an entry and edit it — no HTML to touch.
+#
+#   authors:  full author string. "Paris JR" is bolded automatically.
+#   title:    paper title, no trailing full stop.
+#   venue:    journal + volume/pages, or a status note.
+#   doi:      full https://doi.org/... URL (renders as the main link)
+#   preprint: full URL to a preprint (renders as a "bioRxiv" link)
+#   url:      any other link, used when there is no DOI
+#   note:     small print under the entry (e.g. joint authorship)
+#   year:     required for `published` only; drives the year headings.
+# ---------------------------------------------------------------------------
+
+pipeline:
+  - authors: "Paris JR, Abueg L, Pelan S, Tilley T, Balacco J, O'Toole B, Mountcastle J, Formenti G, Jarvis ED, Canestrelli D, Salvi D"
+    title: "Chromosome-level genome of assembly of the European leaf-toed gecko, Euleptes europea"
+
+in_review:
+  - authors: "Paris JR, Jenkins TL, Ferrer Obiol J, Gundappa MK, Regan T, Campbell L, Maslen GL, Alvarez-Jarreta J, Dyer S, Jefferies A, Moore KA, Farbos A, Bickley L, Verbruggen B, Bateman K, Daniels C, Ellis CD, Ashton TJ, Tyler CR, Steniford G, Houston R, Bean T, van Aerle R, Macqueen D, Stevens JR, Santos EM"
+    title: "A high-quality reference genome and tissue expression atlas for the European lobster (Homarus gammarus)"
+
+  - authors: "Garcia-Urdangarin B, Ferrer Obiol J, Paris JR, Sallent Á, Izquierdo-Arànega G, Ragonnet M, Afán I, Forero MG, Navarro J, García P, González-Solís J, Ramos R"
+    title: "Migration and population structure of two closely related seabirds across their contact zone"
+
+  - authors: "Uren Webster T, Laing LV, Onime J, Littler H, McFarling R, Paris JR, Fitzgerald JA, Lange A, Farbos A, Moore KA, Hitchings MD, van Aerle R, Bury NR, Santos EM"
+    title: "Developmental priming increases copper-tolerance in a model fish species via epigenetic- and microbiome-mediated mechanisms"
+    preprint: "https://doi.org/10.1101/2025.11.28.691212"
+
+  - authors: "Paris JR, Nitta Fernandes FA, Santos CA, Pointon D-LB, Wood JMD, Ferrer Obiol J, Salces-Ortiz J, Fernández R, Cristofari R, Le Bohec C, Trucchi E"
+    title: "A chromosome-level genome of the King penguin (Aptenodytes patagonicus): an emerging model-in-the-wild for studying evolution"
+    preprint: "https://doi.org/10.1101/2025.03.13.642884"
+    projects: [king-penguins]
+
+  - authors: "Nitta Fernandes FA, Bardon G, Paris JR, Ancona L, Cristofari R, Ferrer Obiol J, Greco S, Gerdol M, Carette P, Le Bohec C, Trucchi E"
+    title: "Early life stress as a potential resilience factor in king penguins"
+    preprint: "https://doi.org/10.1101/2025.07.10.663151"
+
+published:
+  # --- 2025 ---------------------------------------------------------------
+  - year: 2025
+    authors: "Paris JR, Whiting JR, Ferrer Obiol J, Hughes KA, Fraser BA"
+    title: "Repeated signatures of balancing selection in small and large populations of guppies (Poecilia reticulata)"
+    venue: "Accepted in Philosophical Transactions of the Royal Society B"
+    preprint: "https://doi.org/10.1101/2025.06.12.659363"
+    projects: [guppies]
+
+  - year: 2025
+    authors: "Paris JR, Bisconti R, Chiocchio A, Abueg L, Absolon D, Tilley T, Jain N, Balacco J, O'Toole B, Jarvis ED, Formenti G, Salvi D, Canestrelli D"
+    title: "Chromosome-level genome assembly of the Tyrrhenian tree frog, Hyla sarda"
+    venue: "Scientific Data, 12: 1539"
+    doi: "https://doi.org/10.1038/s41597-025-05760-9"
+
+  - year: 2025
+    authors: "Izquierdo-Aranega G, Cuevas-Caballe C, Giannelli F, Paris JR, Bourgeois K, Trucchi E, Gonzalez-Solis J, Ruitort M, Ferrer Obiol J, Rozas J"
+    title: "Pervasive and recurrent hybridisation prevents inbreeding depression in Europe's most threatened seabird"
+    venue: "In Press, PNAS"
+    preprint: "https://doi.org/10.1101/2024.10.24.619781"
+
+  - year: 2025
+    authors: "Trucchi E, Massa P, Giannelli F, Latrille T, Gargano M, Fernandes FAN, Ancona L, Stenseth NC, Ferrer Obiol J, Paris JR, Bertorelle G, Le Bohec C"
+    title: "High gene expression predicts extremely low segregation of deleterious mutations in large penguin populations"
+    venue: "Molecular Biology and Evolution, msaf146"
+    doi: "https://doi.org/10.1093/molbev/msaf146"
+
+  - year: 2025
+    authors: "Paris JR, Criss MA, Walsh JL, Ferrer Obiol J, Murray CS, Boone J, Petersen A"
+    title: "Two genomes of the white perch (Morone americana), an ecologically important teleost"
+    venue: "Journal of Heredity, esaf034"
+    doi: "https://doi.org/10.1093/jhered/esaf034"
+
+  - year: 2025
+    authors: "Ferrer Obiol J, Bounas A, Brambilla M, Lombardo G, Secomandi S, Paris JR ... Rubolini D"
+    title: "Evolutionarily distinct lineages of a migratory bird of prey show divergent responses to climate change"
+    venue: "Nature Communications, 16: 3503"
+    doi: "https://doi.org/10.1038/s41467-025-58617-5"
+
+  - year: 2025
+    authors: "Paris JR, King RA, Ferrer Obiol J, Shaw S, Lange A, Bourret V, Hamilton PB, Rowe D, Laing LV, Farbos A, Moore KA, Urbina MA, Catchen JM, Wilson RW, Bury NR, Santos EM, Stevens JR"
+    title: "The transcriptional response and genomic signature of metal tolerance in brown trout inhabiting metal-polluted rivers"
+    venue: "Molecular Ecology, 34(1): e17591"
+    doi: "https://doi.org/10.1111/mec.17591"
+
+  # --- 2024 ---------------------------------------------------------------
+  - year: 2024
+    authors: "Paris JR, Ficetola GF, Ferrer Obiol J, Silva-Rocha I, Carretero MA, Salvi D"
+    title: "Does hybridisation with an invasive species threaten Europe's most endangered reptile? Genomic assessment of Aeolian lizards on Vulcano island"
+    venue: "iScience, 27(11): 111097"
+    doi: "https://doi.org/10.1016/j.isci.2024.111097"
+    projects: [podarcis-lizards]
+
+  - year: 2024
+    authors: "Paris JR, Fernandes FAN, Pirri F, Greco S, Gerdol M, Pallavicini A, Benoiste M, Cornec C, Zane L, Haas B, Le Bohec C, Trucchi E"
+    title: "Gene expression shifts in Emperor penguin adaptation to the extreme Antarctic environment"
+    venue: "Molecular Ecology, Early View"
+    doi: "https://doi.org/10.1111/mec.17552"
+
+  - year: 2024
+    authors: "Ellis CD, Paris JR, Jenkins TL, van Stralen MR, Steins NA, Schotanus J, Stevens JR"
+    title: "Genetic divergence and adaptation of an isolated European lobster population in the Netherlands"
+    venue: "ICES Journal of Marine Science, 81(6): 1039-1052"
+    doi: "https://doi.org/10.1093/icesjms/fsae059"
+
+  - year: 2024
+    authors: "Kardum Hjort C, Paris JR, Smith HG, Dudaniec RY"
+    title: "Selection despite low genetic diversity and high gene flow in a rapid island invasion of the bumblebee, Bombus terrestris"
+    venue: "Molecular Ecology, 33(2): e17212"
+    doi: "https://doi.org/10.1111/mec.17212"
+
+  - year: 2024
+    authors: "Sherpa S, Salvi D, Silva-Rocha I, Capblancq T, Paris JR, Carretero MA, Ficetola GF"
+    title: "Reconstructing the complex colonization histories of lizards across Mediterranean archipelagos"
+    venue: "Journal of Biogeography, 51(2): 157-172"
+    doi: "https://doi.org/10.1111/jbi.14739"
+    projects: [podarcis-lizards]
+
+  # --- 2023 ---------------------------------------------------------------
+  - year: 2023
+    authors: "Sherpa S, Paris JR, Silva-Rocha I, Di Canio V, Carretero MA, Ficetola GF, Salvi D"
+    title: "Genetic depletion does not prevent rapid evolution in island-introduced lizards"
+    venue: "Ecology and Evolution, 13(11): e10721"
+    doi: "https://doi.org/10.1002/ece3.10721"
+    projects: [podarcis-lizards]
+
+  - year: 2023
+    authors: "Sozzoni M, Ferrer Obiol J, Formenti G, Tigano A, Paris JR, Balacco JR, Jain N, Tilley T, Collins J, Sims Y, Wood J, Benowitz-Fredericks M, Field KA, Seyoum E, Gatt MC, Léandri-Breton DJ, Nakajima C, Whelan S, Gianfranceschi L, Hatch SA, Elliott KH, Shoji A, Cecere JG, Jarvis ED, Pilastri A, Rubolini D"
+    title: "A chromosome-level reference genome for the black-legged kittiwake (Rissa tridactyla), a declining circumpolar seabird"
+    venue: "Genome Biology and Evolution, 15(8): evad153"
+    doi: "https://doi.org/10.1093/gbe/evad153"
+
+  - year: 2023
+    authors: "Macleod KL, Paris JR, Jenkins TL, Stevens JR"
+    title: "The first genome of the cold-water octocoral, the pink sea fan, Eunicella verrucosa"
+    venue: "Genome Biology and Evolution, 15(6): evad083"
+    doi: "https://doi.org/10.1093/gbe/evad083"
+
+  - year: 2023
+    authors: "Nascimento-Schulze JC, Penaloza C, Paris JR, Whiting JR, Sanders MB, Bean TP, Houston RD, Fraser BA, Ellis R"
+    title: "Development of a medium density SNP-array for the blue mussel species-complex"
+    venue: "Evolutionary Applications, 16(5): 1044-1060"
+    doi: "https://doi.org/10.1111/eva.13552"
+
+  # --- 2022 ---------------------------------------------------------------
+  - year: 2022
+    authors: "Ferrer Obiol J, Herranz JM, Paris JR, Whiting JR, Rozas J, Riutort M, González-Solís J"
+    title: "Species delimitation using genomic data to resolve taxonomic uncertainties in a speciation continuum of pelagic seabirds"
+    venue: "Molecular Phylogenetics and Evolution, 179: 107671"
+    doi: "https://doi.org/10.1016/j.ympev.2022.107671"
+
+  - year: 2022
+    authors: "Whiting JR, Paris JR, van der Zee MJ, Fraser BA"
+    title: "AF-vapeR: A multivariate genome scan for detecting parallel evolution using allele frequency change vectors"
+    venue: "Methods in Ecology and Evolution, 13(10): 2167-2180"
+    doi: "https://doi.org/10.1111/2041-210X.13952"
+
+  - year: 2022
+    authors: "Paris JR, Whiting JR, Daniel MJ, Ferrer Obiol J, Parsons PJ, van der Zee MJ, Wheat CW, Hughes KA, Fraser BA"
+    title: "A large and diverse autosomal haplotype is associated with sex-linked colour polymorphism in the guppy"
+    venue: "Nature Communications, 13: 1233"
+    doi: "https://doi.org/10.1038/s41467-022-28895-4"
+    projects: [guppies]
+
+  - year: 2022
+    authors: "Whiting JR, Paris JR, Parsons PJ, Matthews S, Reynoso Y, Hughes KA, Reznick DN, Fraser BA"
+    title: "On the genetic architecture of rapidly adapting and convergent life history traits in guppies"
+    venue: "Heredity, 128(4): 250-260"
+    doi: "https://doi.org/10.1038/s41437-022-00512-6"
+    projects: [guppies]
+
+  - year: 2022
+    authors: "Kardum Hjort C, Paris JR, Olsson P, Herbertsson L, de Miranda JR, Dudaniec RY, Smith HG"
+    title: "Genomic divergence and a lack of introgression between commercial and wild bumblebees (Bombus terrestris)"
+    venue: "Evolutionary Applications, 15(3): 365-382"
+    doi: "https://doi.org/10.1111/eva.13346"
+
+  - year: 2022
+    authors: "van der Zee MJ, Whiting JR, Paris JR, Bassar RD, Travis J, Weigel D, Reznick DN, Fraser BA"
+    title: "Rapid genomic convergent evolution in experimental populations of Trinidadian guppies (Poecilia reticulata)"
+    venue: "Evolution Letters, 6(2): 149-161"
+    doi: "https://doi.org/10.1002/evl3.272"
+    projects: [guppies]
+
+  # --- 2021 ---------------------------------------------------------------
+  - year: 2021
+    authors: "Whiting JR, Paris JR, van der Zee MJ, Parsons PJ, Weigel D, Fraser BA"
+    title: "Drainage-structuring of ancestral variation and a common functional pathway shape limited genomic convergence in natural high- and low-predation guppies"
+    venue: "PLoS Genetics, 17(5): e1009566"
+    doi: "https://doi.org/10.1371/journal.pgen.1009566"
+    projects: [guppies]
+
+  # --- 2020 ---------------------------------------------------------------
+  - year: 2020
+    authors: "Hamilton PB, Lockyer A, Uren Webster T, Studholme DJ, Paris JR, Baynes A, Nicol E, Dawson D, Moore KA, Farbos A, Jobling S, Stevens JR, Tyler CR"
+    title: "Populations of roach (Rutilus rutilus) in English rivers show local adaptation in genes responsive to endocrine disrupting chemicals"
+    venue: "Environmental Science and Technology, 24(54): 15935-15945"
+    doi: "https://doi.org/10.1021/acs.est.0c00957"
+
+  - year: 2020
+    authors: "Fraser BA, Whiting JR, Paris JR, Weadick CJ, Parsons PJ, Charlesworth D, Bergero R, Bemm F, Hoffmann M, Kottler VA, Liu C, Dreyer C, Weigel D"
+    title: "Improved reference genome uncovers novel sex-linked regions in the guppy (Poecilia reticulata)"
+    venue: "Genome Biology and Evolution, evaa187"
+    doi: "https://doi.org/10.1093/gbe/evaa187"
+    projects: [guppies]
+
+  - year: 2020
+    authors: "Lange A, Paris JR, Gharbi K, Cézard T, Miyagawa S, Iguchi T, Studholme DJ, Tyler CR"
+    title: "A newly developed genetic sex marker and its application to understanding chemically induced feminisation in roach (Rutilus rutilus)"
+    venue: "Molecular Ecology Resources, 20(4): 1007-1022"
+    doi: "https://doi.org/10.1111/1755-0998.13166"
+
+  - year: 2020
+    authors: "Sherman KD, Paris JR, King RA, Moore KA, Dahlgren CP, Knowles LC, Stump K, Stevens JR, Tyler CR"
+    title: "RAD-Seq analysis and in situ monitoring of Nassau grouper reveal fine-scale population structure and origins of aggregating fish"
+    venue: "Frontiers in Marine Science, 7: 157"
+    doi: "https://doi.org/10.3389/fmars.2020.00157"
+
+  # --- 2019 ---------------------------------------------------------------
+  - year: 2019
+    authors: "Paris JR, Usher J"
+    title: "Functional genomic characterization of metallothioneins in brown trout (Salmo trutta L.) using synthetic genetic analysis"
+    venue: "Scientific Reports, 9: 11827"
+    doi: "https://doi.org/10.1038/s41598-019-48303-0"
+
+  # --- 2018 ---------------------------------------------------------------
+  - year: 2018
+    authors: "Ikediashi C*, Paris JR*, King RA, Beaumont WRC, Ibbotson A, Stevens JR"
+    title: "Atlantic salmon Salmo salar L. in the chalk streams of England are genetically unique"
+    venue: "Journal of Fish Biology, 92(3): 621-641"
+    doi: "https://doi.org/10.1111/jfb.13538"
+    note: "* Joint first co-authors"
+
+  - year: 2018
+    authors: "Paris JR*, Sherman KD*, Bell E, Boulenger C, Delord C, El-Mahdi MBM, Fairfield EA, Griffiths AM, Gutmann Roberts C, Hedger RD, Holman LE, Hooper LH, Humphries NE, Katsiadaki I, King RA, Lemopoulos A, Payne CJ, Peirson G, Richter KK, Taylor MI, Trueman CN, Hayden B, Stevens JR"
+    title: "Understanding and managing fish populations: keeping the toolbox fit for purpose"
+    venue: "Journal of Fish Biology, 92(3): 727-751"
+    doi: "https://doi.org/10.1111/jfb.13549"
+    note: "* Joint first co-authors"
+
+  # --- 2017 ---------------------------------------------------------------
+  - year: 2017
+    authors: "Dillon MJ, Paris JR, Bowkett AE, Bundard MJ, Harding L, Sayers G, Beckman KM, O'Brien MF, Cromie RL, Bates K, Fisher MC, Stevens JR, Thornton CR"
+    title: "Tracking amphibian pathogens using lateral-flow technology"
+    venue: "Peer-reviewed conference proceeding presented at the Zoo and Wildlife Health Conference, Berlin, Germany"
+
+  - year: 2017
+    authors: "Paris JR, Stevens JR, Catchen JM"
+    title: "Lost in parameter space: a road map for Stacks"
+    venue: "Methods in Ecology and Evolution, 8(10): 1360-1373"
+    doi: "https://doi.org/10.1111/2041-210X.12775"
+
+  # --- 2015 ---------------------------------------------------------------
+  - year: 2015
+    authors: "Paris JR, King RA, Stevens JR"
+    title: "Human mining activity across the ages determines the genetic structure of modern brown trout (Salmo trutta L.) populations"
+    venue: "Evolutionary Applications, 8(6): 573-585"
+    doi: "https://doi.org/10.1111/eva.12266"

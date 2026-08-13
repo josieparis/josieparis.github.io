@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="page-header">
+  <div class="wrap">
+    <h1 class="page-header__title">{{ page.title }}</h1>
+    {%- if page.lede %}<p class="page-header__lede">{{ page.lede }}</p>{% endif -%}
+  </div>
+</div>
+
+<div class="wrap">
+  {{ content }}
+</div>

@@ -1,0 +1,144 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+lede: Where I've worked, what I've studied, and what I've been given money to do.
+---
+
+<section class="cv-section">
+  <h2>Academic history</h2>
+  <div class="prose">
+    <p>
+      I completed my Bachelor's degree in Ecology &amp; Conservation at the School of Life
+      Sciences, University of Sussex, UK.
+    </p>
+    <p>
+      I did a PhD in Molecular Ecology &amp; Evolution at the University of Exeter, UK, where I
+      studied the genetic (microsatellites and RAD-seq) and transcriptomic (RNA-seq) signatures
+      of metal tolerance in wild brown trout (<em>Salmo trutta</em> L.). I also undertook a
+      physiology experiment in the laboratory, where I exposed wild brown trout from
+      metal-impacted, and relatively clean control rivers to metal pollutants. During my PhD, I
+      was the Graduate Teaching Assistant for the Marine Biology Course in The Bahamas, which I
+      helped coordinate and teach on for 5 years.
+    </p>
+    <p>
+      I then moved back to the University of Sussex for a NERC postdoc, where I used genomic data
+      to detect signatures of balancing selection (specifically NFDS) in the Trinidadian guppy
+      (<em>Poecilia reticulata</em>). One year into this postdoc, my PI was offered a position at
+      the University of Exeter, so I moved back again to Exeter! This postdoctoral position lasted
+      more than 4 years, where, alongside my main research line, I undertook analyses to detect
+      convergent evolution and rapid adaptation.
+    </p>
+    <p>
+      I then moved to northern Italy with my partner (also in academia), where I took on a remote
+      BBSRC postdoc (University of Exeter, UK) to assemble the first reference genome of the
+      European lobster (<em>Homarus gammarus</em>).
+    </p>
+    <p>
+      After this, I was awarded a postdoctoral position at the University of L'Aquila (Italy)
+      where I generated several genomic datasets to explore the population genomics of three
+      species: the Italian wall lizard (<em>Podarcis siculus</em>), the endemic Aeolian wall
+      lizard (<em>Podarcis raffonei</em>), and the European leaf-toed gecko
+      (<em>Euleptes europea</em>). During this time, I also worked on the chromosome-level genome
+      assemblies of the Sardinian/Tyrrhenian tree frog (<em>Hyla sarda</em>) and the European
+      leaf-toed gecko (<em>Euleptes europea</em>).
+    </p>
+    <p>
+      I was then awarded a Marie Skłodowska-Curie Fellowship to investigate the genomic signatures
+      of rapid adaptation in the King penguin (<em>Aptenodytes patagonicus</em>). I generated the
+      chromosome-level reference genome for the species. I'm still working on the genomic analyses
+      (the MSCA finished in May 2025).
+    </p>
+    <p>
+      I moved to the US in May 2025, where I'm currently a visiting researcher, working with
+      Kristen Ruegg on constructing the demographic history of rosy finches
+      (<em>Leucosticte</em> sp.). I'll soon be starting a postdoc with Chris Funk on genomics of
+      chronic wasting disease (CWD) transmission in mule deer (<em>Odocoileus hemionus</em>).
+    </p>
+  </div>
+</section>
+
+<section class="cv-section">
+  <h2>Employment</h2>
+  <ol class="timeline">
+    {%- for job in site.data.cv.employment -%}
+    <li class="timeline__item">
+      <div class="timeline__media">
+        {%- if job.image -%}
+        <img src="{{ job.image | prepend: '/assets/img/' | relative_url }}" alt="" loading="lazy">
+        {%- endif -%}
+      </div>
+      <div>
+        <h3 class="timeline__role">{{ job.role }}</h3>
+        <p class="timeline__org">{{ job.org }}</p>
+        <p class="timeline__meta">
+          <span>{{ job.dates }}</span>
+          {%- if job.pi %}<span>PI: {{ job.pi }}</span>{% endif -%}
+        </p>
+        {%- if job.topic %}<p class="timeline__topic">{{ job.topic }}</p>{% endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="cv-section">
+  <h2>Professional experience</h2>
+  <ul class="stack">
+    {%- for item in site.data.cv.professional -%}
+    <li>
+      <h3>{{ item.title }}</h3>
+      {%- if item.meta %}<p class="meta">{{ item.meta }}</p>{% endif -%}
+      <p>{{ item.body }}
+        {%- if item.link_url %} <a href="{{ item.link_url }}" rel="noopener" target="_blank">{{ item.link_text }} →</a>{% endif -%}
+      </p>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Education</h2>
+  <ul class="stack">
+    {%- for ed in site.data.cv.education -%}
+    <li>
+      <h3>{{ ed.degree }}</h3>
+      <p class="meta">{{ ed.org }} · {{ ed.dates }}</p>
+      {%- if ed.thesis %}<p><em>{{ ed.thesis }}</em></p>{% endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Research secondments</h2>
+  <ul class="stack">
+    {%- for s in site.data.cv.secondments -%}
+    <li>
+      <h3>{{ s.year }}</h3>
+      <p>{{ s.body }}</p>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Grants &amp; awards</h2>
+  <ol class="awards">
+    {%- for group in site.data.cv.awards -%}
+    <li class="awards__row">
+      <div class="awards__year">{{ group.year }}</div>
+      <ul class="awards__items">
+        {%- for item in group.items -%}<li>{{ item }}</li>{%- endfor -%}
+      </ul>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="cv-section">
+  <h2>Other stuff</h2>
+  <ul class="bullets">
+    {%- for item in site.data.cv.other -%}<li>{{ item }}</li>{%- endfor -%}
+  </ul>
+</section>

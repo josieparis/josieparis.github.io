@@ -1,0 +1,49 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+lede: Peer-reviewed papers, preprints, and work in progress.
+---
+
+<p>
+  <a class="scholar-link" href="{{ site.social.scholar }}" rel="noopener" target="_blank">
+    See Google Scholar →
+  </a>
+</p>
+
+{%- assign pipeline = site.data.publications.pipeline -%}
+{%- if pipeline and pipeline.size > 0 -%}
+<section class="pub-section">
+  <h2 class="pub-section__title">In the pipeline …</h2>
+  <ol class="pubs">
+    {%- for pub in pipeline -%}{% include pub.html pub=pub %}{%- endfor -%}
+  </ol>
+</section>
+{%- endif -%}
+
+{%- assign in_review = site.data.publications.in_review -%}
+{%- if in_review and in_review.size > 0 -%}
+<section class="pub-section">
+  <h2 class="pub-section__title">In review</h2>
+  <ol class="pubs">
+    {%- for pub in in_review -%}{% include pub.html pub=pub %}{%- endfor -%}
+  </ol>
+</section>
+{%- endif -%}
+
+<section class="pub-section">
+  <h2 class="pub-section__title">Fully fledged</h2>
+  <p class="pub-section__note">{{ site.data.publications.published | size }} published works.</p>
+
+  {%- assign last_year = "" -%}
+  {%- for pub in site.data.publications.published -%}
+    {%- if pub.year != last_year -%}
+      {%- unless forloop.first -%}</ol>{%- endunless -%}
+      <h3 class="year-heading">{{ pub.year }}</h3>
+      <ol class="pubs">
+      {%- assign last_year = pub.year -%}
+    {%- endif -%}
+    {% include pub.html pub=pub %}
+    {%- if forloop.last -%}</ol>{%- endif -%}
+  {%- endfor -%}
+</section>
