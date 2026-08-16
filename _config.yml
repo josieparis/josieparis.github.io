@@ -11,7 +11,7 @@ author: Josie Paris
 # If you publish to https://<username>.github.io  -> leave baseurl empty.
 # If you publish to https://<username>.github.io/<repo>  -> set baseurl: "/<repo>".
 # Set `url` once you know it; it is only used for absolute links (SEO, sitemap).
-url: ""
+url: "https://josieparis.github.io"
 baseurl: ""
 
 # --- Contact / links ---------------------------------------------------------
