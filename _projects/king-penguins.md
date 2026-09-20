@@ -7,9 +7,10 @@ order: 1
 image: king-penguins.jpg
 image_alt: A colony of King penguins
 context: >-
-  This project started during my Marie Skłodowska-Curie Postdoctoral Fellowship at
-  Marche Polytechnic University, Ancona, Italy, in collaboration with
-  Emiliano Trucchi (Italy) and Céline Le Bohec (France).
+  This project started during my Marie Skłodowska-Curie Postdoctoral Fellowship
+  (Poly2Adapt, Horizon Europe grant 101068395) at Marche Polytechnic University,
+  Ancona, Italy, in collaboration with Emiliano Trucchi (Italy) and
+  Céline Le Bohec (France).
 funders:
   - name: Marie Skłodowska-Curie Actions
     logo: logo-msca.jpg

@@ -10,7 +10,8 @@ _config.yml              site title, email, social links, baseurl
 _data/
   nav.yml                the top navigation
   publications.yml       every paper — the single source of truth
-  cv.yml                 employment, education, secondments, grants, awards
+  cv.yml                 employment, education, secondments, professional roles,
+                         software, teaching, supervision, organisation, talks, awards
   more_projects.yml      projects listed on /projects/ without their own page
 _projects/               one Markdown file per project write-up
   king-penguins.md
@@ -70,14 +71,15 @@ funders:
 ---
 ```
 
-**Change a CV entry.** All of `_data/cv.yml`. The "Academic history" prose is the
-only CV content written directly in `cv.html`.
+**Change a CV entry.** All of `_data/cv.yml` — one list per section of the page, in the
+same order they appear. The "Academic history" prose is the only CV content written
+directly in `cv.html`. Values may contain inline HTML (`<em>` for species names).
 
 **Change the look.** `assets/css/main.css`. The colour and font variables are all at
-the top under `:root`, with a dark-mode block right below it. The old Wix site used
-Syne for headings and Questrial for body text; Syne is kept, body text moved to Inter
-because Questrial only ships one weight and this site has a lot of dense text. To go
-back, change `--font-body` and the Google Fonts link in `_includes/head.html`.
+the top under `:root`, with a dark-mode block right below it. The whole site uses one typeface, Inter, with headings
+distinguished by size and weight only. The old Wix site used Syne for headings and
+Questrial for body text; to use a different heading font, set `--font-display` to it and
+add it to the Google Fonts link in `_includes/head.html`.
 
 ## Preview locally
 

@@ -5,10 +5,20 @@ permalink: /publications/
 lede: Peer-reviewed papers, preprints, and work in progress.
 ---
 
-<p>
-  <a class="scholar-link" href="{{ site.social.scholar }}" rel="noopener" target="_blank">
-    See Google Scholar →
-  </a>
+{%- assign published = site.data.publications.published -%}
+{%- assign first_author = 0 -%}
+{%- for p in published -%}
+  {%- assign head = p.authors | slice: 0, 8 -%}
+  {%- if head == "Paris JR" -%}{%- assign first_author = first_author | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+<p class="pub-stats">
+  <b>{{ published | size }}</b> peer-reviewed publications · <b>{{ first_author }}</b> first-author ·
+  <b>{{ site.data.publications.in_review | size }}</b> in review ·
+  <b>{{ site.data.publications.pipeline | size }}</b> in preparation
+</p>
+<p class="pub-links-row">
+  <a class="scholar-link" href="{{ site.social.scholar }}" rel="noopener" target="_blank">Google Scholar →</a>
+  <a class="scholar-link" href="{{ site.social.orcid }}" rel="noopener" target="_blank">ORCID →</a>
 </p>
 
 {%- assign pipeline = site.data.publications.pipeline -%}
@@ -32,8 +42,7 @@ lede: Peer-reviewed papers, preprints, and work in progress.
 {%- endif -%}
 
 <section class="pub-section">
-  <h2 class="pub-section__title">Fully fledged</h2>
-  <p class="pub-section__note">{{ site.data.publications.published | size }} published works.</p>
+  <h2 class="pub-section__title">Fully fledged</h2>| size }} published works.</p>
 
   {%- assign last_year = "" -%}
   {%- for pub in site.data.publications.published -%}

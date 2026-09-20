@@ -1,10 +1,10 @@
 # --- Site identity -----------------------------------------------------------
 title: Josie Paris
-tagline: Evolutionary biologist
+tagline: Population & evolutionary genomics
 description: >-
-  Josie Paris is an evolutionary biologist using analytical approaches at the
-  forefront of ecological genomics to integrate knowledge of adaptation into
-  understanding the dynamics of wild animal populations.
+  Josie Paris is an evolutionary biologist and Research Scientist at Colorado State
+  University, using approaches at the forefront of ecological genomics to integrate
+  knowledge of adaptation into understanding the dynamics of wild animal populations.
 author: Josie Paris
 
 # --- Where the site lives ----------------------------------------------------
@@ -22,8 +22,9 @@ email_user: parisjosephine
 email_domain: gmail.com
 
 social:
-  twitter: https://twitter.com/josephine_paris
+  orcid: https://orcid.org/0000-0001-6868-3416
   scholar: https://scholar.google.com/citations?hl=en&user=Z2-h0oIAAAAJ&view_op=list_works
+  github: https://github.com/josieparis
 
 # --- Collections -------------------------------------------------------------
 collections:

@@ -1,156 +1,414 @@
 # ---------------------------------------------------------------------------
-# Everything on the CV page except the "Academic history" prose,
-# which lives in cv.html itself.
+# Everything on the CV page except the "Academic history" prose, which lives
+# in cv.html itself. Source of truth: Josephine_Paris_CV_2026.pdf (Sep 2026).
 # ---------------------------------------------------------------------------
 
 employment:
   - role: Research Scientist
     org: Colorado State University, USA
-    dates: upcoming …
+    dates: Feb 2026 – present
     pi: Chris Funk
-    topic: Genomics of Chronic Wasting Disease in mule deer
+    funder: USDA-APHIS
+    topic: >-
+      Population and landscape genomics to understand the transmission of Chronic Wasting
+      Disease (CWD) in mule deer (<em>Odocoileus hemionus</em>): genome annotation, WGS.
     image: cv-mule-deer.jpg
 
-  - role: Visiting Researcher
+  - role: Visiting Researcher (Guest Associate)
     org: Colorado State University, USA
-    dates: May 2025 – present
+    dates: May – Dec 2025
     pi: Kristen Ruegg
-    topic: Demographic history of rosy finches
+    funder: NSF
+    topic: >-
+      Demographic modelling of North American rosy finches (<em>Leucosticte</em> sp.: Black,
+      Brown-capped and Gray-crowned): WGS.
     image: cv-rosy-finch.jpg
 
   - role: Affiliated Researcher
     org: University of Milan, Italy
-    dates: Aug 2025 – Oct 2025
+    dates: Aug – Oct 2025
     pi: Carlo Polidori
-    topic: Convergent adaptation to urban environments in the Italian sparrow
+    funder: PNRR
+    topic: >-
+      URBANAPT – convergent adaptation to urban environments in the Italian house sparrow
+      (<em>Passer italiae</em>): WGS.
     image: cv-sparrow.png
 
-  - role: Marie Skłodowska-Curie Fellowship
+  - role: MSCA Postdoctoral Fellow
     org: Marche Polytechnic University, Italy
-    dates: May 2023 – May 2025
+    dates: May 2023 – Apr 2025
     pi: Emiliano Trucchi
-    topic: Genomic adaptation to climate change in King penguins
+    funder: European Union (Horizon Europe Marie Skłodowska-Curie Actions, grant 101068395)
+    topic: >-
+      Poly2Adapt – quantifying polygenic selection in real-time adaptation to climate change.
+      Detecting signatures of rapid adaptation to climate change in the King penguin
+      (<em>Aptenodytes patagonicus</em>): genome assembly &amp; annotation, WGS.
     image: cv-king-penguin.png
 
-  - role: Postdoc
-    org: University of Exeter, UK (remote)
-    dates: Feb 2023 – May 2023
+  - role: Postdoctoral Research Associate
+    org: University of Exeter, UK
+    dates: Feb – Apr 2023
     pi: Jamie Stevens
-    topic: Population genetics of salmonids
+    topic: "UK salmonid population genetics: RAD-seq."
     image: cv-salmon.jpeg
 
-  - role: Postdoc
+  - role: Postdoctoral Research Associate
     org: University of L'Aquila, Italy
-    dates: Feb 2022 – Feb 2023
+    dates: Feb 2022 – Jan 2023
     pi: Daniele Salvi
-    topic: Population genomics of Mediterranean reptiles
+    funder: PRIN
+    topic: >-
+      Population and conservation genomics, biogeography and evolution of island-endemic
+      Mediterranean reptiles: Aeolian wall lizard (<em>Podarcis raffonei</em>), Italian wall
+      lizard (<em>Podarcis siculus</em>), European leaf-toed gecko (<em>Euleptes europaea</em>):
+      RAD-seq, WGS.
     image: cv-lizard.jpg
 
-  - role: Postdoc
-    org: University of Exeter, UK (remote)
+  - role: Postdoctoral Research Associate
+    org: University of Exeter, UK
     dates: Jul 2021 – Jan 2022
     pi: Eduarda Santos
-    topic: Reference genome of the European lobster
+    funder: BBSRC AquaLeap
+    topic: >-
+      Development of genomic tools for the European lobster (<em>Homarus gammarus</em>):
+      genome assembly &amp; annotation, GWAS with RAD-seq, epigenetics with RRBS.
     image: cv-lobster.jpg
 
-  - role: Postdoc
-    org: University of Exeter, UK
-    dates: Oct 2017 – Jun 2022
+  - role: Postdoctoral Research Associate
+    org: University of Sussex / University of Exeter, UK
+    dates: Oct 2017 – Jul 2021
     pi: Bonnie Fraser
-    topic: Genomics of adaptive polymorphism (NFDS) in the Trinidadian guppy
+    funder: NERC
+    topic: >-
+      Ecological genomics of the Trinidadian guppy (<em>Poecilia reticulata</em>) including
+      balancing selection, convergent evolution and rapid adaptation: genome assembly, WGS,
+      Pool-seq and RAD-seq. The contract began at the University of Sussex (1 year); the group
+      moved to the University of Exeter when the PI took up a new position.
     image: cv-guppies.jpg
 
   - role: Graduate Research Assistant
     org: University of Exeter, UK
-    dates: March 2017 – Jun 2017
-    pi: Chris Thornton
-    topic: Generation of lateral flow devices (LFDs) to detect Bd
+    dates: Mar – Sep 2017
+    pi: Jamie Stevens &amp; Chris Thornton
+    funder: CEFAS &amp; The Leverhulme Trust
+    topic: >-
+      Cost-effective genetic monitoring tools for salmonids (microsatellites, SNP-chip; CEFAS).
+      Development and promotion of lateral flow devices to detect the chytrid fungus
+      <em>Batrachochytrium dendrobatidis</em>.
     image: cv-frogs.jpg
-
-professional:
-  - title: Director of the Workshop on Genomics, Český Krumlov, Czech Republic
-    meta: Two weeks, annually — 2023, 2024, 2025, 2026
-    body: >-
-      I am the Director of the international Workshop on Genomics, which delivers
-      advanced training in bioinformatics analysis of genomic data to ~70
-      participants from ~15 countries annually.
-    link_text: See the 2025 program
-    link_url: https://evomics.org/2025-workshop-on-genomics/
-
-  - title: Genomics Consultant for the National Oceanic and Atmospheric Administration (NOAA)
-    body: >-
-      I am sub-contracted to provide consultancy, genomics analyses, and advice and
-      interpretation for several projects involving the generation and use of genomic
-      data for legal and mitigation purposes for damage and injury cases.
 
 education:
   - degree: PhD in Molecular Ecology and Evolution
-    dates: September 2012 – April 2017
+    org: University of Exeter, UK
+    dates: Sep 2012 – Apr 2017 (awarded Sep 2017)
+    supervisors: Jamie Stevens &amp; Eduarda Santos
+    funders: Environment Agency, Westcountry Rivers Trust, University of Exeter
+    body: >-
+      Roles of phenotypic plasticity and genetic adaptation in the evolution of tolerance to
+      toxic metals in brown trout (<em>Salmo trutta</em> L.) using RNA-seq, RAD-seq, and
+      physiology experiments.
     thesis: "Brown trout and toxic metals: local adaptation to the legacy of Britain's mining history"
-    org: University of Exeter
 
-  - degree: BSc in Ecology and Conservation
-    dates: 2009 – 2012
-    org: University of Sussex
+  - degree: BSc in Ecology and Conservation (First Class Honours)
+    org: University of Sussex, UK
+    dates: Sep 2009 – Jun 2012
+    body: >-
+      Final-year project: population structure of the Natterjack toad (<em>Epidalea calamita</em>)
+      in Poland using microsatellites.
+    note: John Maynard Smith Award for the highest grade in the degree programme.
 
 secondments:
-  - year: 2022
-    body: >-
-      Two-week research secondment with Prof. Dan MacQueen & Dr. Tim Bean
-      (Roslin Institute, Edinburgh, UK), to collaborate with members of The Roslin
-      Institute to generate the first reference genome of the European lobster
-      (Homarus gammarus). Output: Paris et al. 2025, bioRxiv.
+  - dates: Aug 2022
+    org: The Roslin Institute, University of Edinburgh, UK
+    hosts: Daniel Macqueen &amp; Tim Bean
+    aim: To generate a high-quality reference genome for the European lobster (<em>Homarus gammarus</em>).
+    output: Publication in Genome Biology &amp; Evolution.
 
-  - year: 2019
-    body: >-
-      Two-week research secondment with Prof. Christopher Wheat (Stockholm
-      University, Sweden), to analyse pool-seq data to detect signatures of colour
-      polymorphism. Publication: Paris et al. 2022, Nature Communications.
+  - dates: Jun – Jul 2019
+    org: Stockholm University, Sweden
+    hosts: Christopher Wheat
+    aim: To detect genomic signatures of colour polymorphism in guppies using Pool-seq and WGS data.
+    output: Publication in Nature Communications.
 
-  - year: 2016
-    body: >-
-      Three-month research secondment with Dr Julian Catchen (University of Illinois
-      Urbana-Champaign, USA), to develop methods for accurate locus recovery in
-      RAD-seq. Publication: Paris et al. 2017, Methods in Ecology and Evolution.
+  - dates: Mar – May 2016
+    org: University of Illinois, USA
+    hosts: Julian Catchen
+    aim: To optimise de novo RAD-seq assembly for non-model organisms.
+    output: Publication in Methods in Ecology and Evolution.
 
-# NOTE: the old Wix page laid these out as a two-column year/award table.
-# The groupings below follow the row alignment of that table — worth a
-# quick check that 2016 is right, since it carries the most entries.
+professional:
+  - title: Director, Workshop on Genomics
+    org: Český Krumlov, Czech Republic
+    meta: 2023 – 2026 · two weeks annually
+    body: >-
+      International workshop delivering advanced training in bioinformatic analysis of genomic
+      data to 65–85 participants from ~15 countries each year. I initiated and managed the Equal
+      Opportunities (EO) funding scheme, which supported 3–5 participants annually from low- and
+      middle-income countries, enabling participation of researchers from Argentina, Brazil,
+      Chile, China, Egypt, Ghana, India, Madagascar, Nigeria and Turkey.
+    link_text: 2026 programme
+    link_url: https://evomics.org/2026-workshop-on-genomics/
+
+  - title: Co-Director, Workshop on Genomics
+    org: Český Krumlov, Czech Republic
+    meta: 2019, 2020, 2022
+
+  - title: Sub-contractor, National Oceanic and Atmospheric Administration (NOAA)
+    org: USA
+    meta: 2023 – present
+    body: >-
+      Consultancy, genomic analyses, advice and interpretation for projects generating genomic
+      data for legal and mitigation purposes in Natural Resource Damage Assessment (NRDA) cases.
+      I liaise directly with NOAA Fisheries, Floragenex and legal and fisheries professionals,
+      and attend annual meetings to review ongoing projects and plan future NRDA work across the
+      USA.
+
+  - title: Editor, Heredity
+    meta: Jul 2026 – present
+    body: >-
+      Handling editor for manuscripts in population and evolutionary genomics, quantitative
+      genetics, conservation genetics and speciation.
+
+  - title: Peer reviewer
+    meta: Ongoing
+    body: >-
+      Reviewer for more than ten journals, including Biological Journal of the Linnean Society,
+      BMC Genomics, BMC Ecology &amp; Evolution, Communications Biology, Ecology &amp; Evolution,
+      Evolutionary Applications, Genome Biology &amp; Evolution, Heredity, Methods in Ecology
+      &amp; Evolution, Molecular Ecology, Nature Communications, PLOS One and Wellcome Open
+      Research Genome Notes.
+
+software:
+  - name: LobsterGeneX
+    desc: lobster gene expression atlas
+  - name: Genomics Adventure
+    desc: teaching materials for training students in genomics
+    url: https://github.com/josieparis/genomics_adventure
+  - name: gatk-snp-calling
+    desc: a collection of PBS/SLURM array scripts for GATK variant calling
+    url: https://github.com/josieparis/gatk-snp-calling
+  - name: GenotypePlot
+    desc: scripts to plot genotypes or allele frequencies in a genomic region
+    url: https://github.com/josieparis/genotype_plot
+  - name: AF-vapeR
+    desc: software for identifying signatures of parallel allele frequency change
+    url: https://github.com/JimWhiting91/afvaper
+
+teaching:
+  - when: "2026"
+    title: BZ-425 Conservation and Population Genomics (undergraduate course)
+    org: Colorado State University, USA
+    items:
+      - "Lecture: Phenotypic and Genetic Variation in Natural Populations"
+      - "Lecture: Conservation and the Genomics of Populations"
+      - "Lecture: Random Mating and the Hardy–Weinberg Equilibrium"
+      - "Lecture: Small Populations and Genetic Drift"
+      - "Lecture: Mutation"
+
+  - when: "2025"
+    title: BZ-525 Advanced Conservation and Evolutionary Genomics (graduate course)
+    org: Colorado State University, USA
+    items:
+      - "Hands-on: Genetic Load lab session (3 h)"
+      - "Lecture: Understanding and Detecting Selection"
+      - "Lecture: Quantitative Genetics"
+
+  - when: 2024, 2025
+    title: Guest lecture, “Transcriptomics Study Design and Analysis”
+    org: Marine Genomics (6 ECTS), IMBRSea International Master's, Marche Polytechnic University, Italy
+
+  - when: 2016 – 2023
+    title: Workshop on Genomics
+    org: Český Krumlov, Czech Republic
+    items:
+      - "“Genomics Adventure” lab session (3 h): 2018, 2019, 2020, 2023"
+      - "Population Genomics lab session (3 h): 2020, 2022"
+      - "RAD-seq lab session (3 h): 2018, 2019"
+      - "Sequencing Data QC lab session (3 h): 2017, 2018"
+      - "Teaching Assistant: 2016, 2017, 2018, 2019"
+
+  - when: 2017, 2018
+    title: Co-instructor (with Julian Catchen), workshop on RAD-seq data analysis
+    org: Physalia Courses, Berlin, Germany
+
+  - when: 2015 – 2017
+    title: Co-instructor (with Julian Catchen), workshop on RAD-seq data analysis
+    org: The Earlham Institute, Norwich, UK
+
+  - when: "2016"
+    title: Instructor, workshop on RAD-seq data analysis
+    org: NTNU, Trondheim, Norway
+
+  - when: 2013 – 2017
+    title: Graduate Teaching Assistant, undergraduate marine-biology field course
+    org: The Bahamas, University of Exeter
+    body: Coordinating and teaching a field course of ~40 students a year (8 days annually).
+
+supervision:
+  - when: Oct 2025 – present
+    role: Co-supervisor
+    who: Sarah Derrien
+    level: PhD
+    org: Macquarie University, Australia &amp; University of St Andrews, UK
+    body: >-
+      Landscape genomics of bees in the UK, New Zealand and Tasmania, examining how pathogen
+      selection pressures (viruses, Varroa-related) may trade off with environmental local
+      adaptation in native and invasive bees. With Rachael Dudaniec (Macquarie) and Oscar
+      Gaggiotti (St Andrews).
+
+  - when: Nov 2024 – present
+    role: Co-supervisor
+    who: Ilaria Calandrino
+    level: Master's
+    org: Marche Polytechnic University, Italy
+    body: >-
+      Genomic adaptation in Emperor penguins: demographic modelling and selective-sweep analyses
+      using WGS of 24 Emperor, 24 King and 6 outgroup penguins (Adélie, Gentoo). With Emiliano
+      Trucchi.
+
+  - when: May 2025 – present
+    role: Mentor
+    who: Erica Robertson
+    level: PhD
+    org: Colorado State University, USA
+    body: >-
+      Low-coverage WGS of rosy finches to determine environmental drivers of population
+      declines. Supervisor: Kristen Ruegg.
+
+  - when: Nov 2025 – present
+    role: Mentor
+    who: Elena Newmark
+    level: PhD
+    org: Colorado State University, USA
+    body: >-
+      RAD-seq of Northern leopard frogs (<em>Lithobates pipiens</em>) to delineate conservation
+      and management units. Supervisor: Chris Funk.
+
+  - when: Nov 2025 – present
+    role: Mentor
+    who: Scott Monahan
+    level: PhD
+    org: Colorado State University, USA
+    body: >-
+      RAD-seq in three frog and three trout species to determine ecosystem-level demographic
+      disturbances. Supervisor: Chris Funk.
+
+  - when: Jun 2020 – Jul 2024
+    role: Co-supervisor
+    who: Cecilia Kardum Hjort
+    level: PhD
+    org: Lund University, Sweden
+    body: >-
+      WGS and RAD-seq to explore hybridisation and adaptation of bumblebee populations in
+      Sweden and Tasmania. With Henrik Smith (Lund) and Rachael Dudaniec (Macquarie).
+
+  - when: Oct 2019 – May 2024
+    role: Mentor
+    who: Daniel Osmond
+    level: PhD
+    org: University of Exeter, UK
+    body: >-
+      Low-coverage WGS of multiple UK populations to understand the role of adaptation in metal
+      tolerance in brown trout. Supervisors: Jamie Stevens (Exeter) and Mike Bruford (Cardiff).
+
+  - when: Oct 2016 – Nov 2020
+    role: Mentor
+    who: Mijke van der Zee
+    level: PhD
+    org: University of Exeter, UK
+    body: >-
+      WGS approaches to understand rapid adaptation in experimentally introduced guppies.
+      Supervisor: Bonnie Fraser.
+
+  - when: Oct 2020 – Jun 2021
+    role: Mentor
+    who: Sophie Matthews
+    level: Master's
+    org: University of Exeter, UK
+    body: "Comparative genomics in poeciliids. Supervisor: Bonnie Fraser."
+
+organisation:
+  - when: 2023 – 2027
+    text: Director, Workshop on Genomics, Czech Republic (2023, 2024, 2025, 2026)
+  - when: "2025"
+    text: Workshop, “Writing a successful Marie Curie Fellowship Proposal”, University of Milan, Italy
+  - when: "2023"
+    text: Symposium on “Temporal Genomics” at SMBE 2023, Ferrara, Italy — co-organised with Bonnie Fraser
+  - when: "2022"
+    text: Scientific Committee member and co-chair, Population Genetics symposium, SIBE 2022, Ancona, Italy
+  - when: 2019 – 2022
+    text: Co-director, Workshop on Genomics, Czech Republic (2019, 2020, 2022)
+  - when: "2013"
+    text: Organising committee, NoWPaS 2013, International Workshop for Anadromous Salmonids, Machynlleth, Wales, UK
+
+talks:
+  keynotes:
+    - when: Jun 2024
+      text: >-
+        Keynote, International Symposium on Mediterranean Lacertid Lizards, Madeira —
+        “Living on the edge: population genomics of island lizards”
+    - when: Aug 2026
+      text: >-
+        Co-author of the keynote at the 7th European Conservation Genetics meeting, Antwerp,
+        Belgium (delivered by Chris Funk) — “Putting the ‘conservation’ in conservation genetics”
+  seminars:
+    - University of Illinois, USA (upcoming, 2027)
+    - University of Milan, Italy (Nov 2022)
+    - The Roslin Institute, UK (Aug 2022)
+    - University of Oxford, UK (Feb 2019)
+    - University of Sussex, UK (Mar 2018)
+    - University of Brighton, UK (Nov 2017)
+    - The Earlham Institute, UK (May 2017)
+    - University of Illinois, USA (Mar 2016)
+    - NTNU University Museum, Norway (Feb 2016)
+    - University of Sheffield, UK (Feb 2016)
+    - Lund University, Sweden (Oct 2015)
+    - The Earlham Institute, UK (Jun 2015)
+
+awards_summary: >-
+  €188,590 for a Marie Skłodowska-Curie Postdoctoral Fellowship (European Commission, 2022)
+  and £10,020 across several small research grants (under £5,000 each) supporting training,
+  fieldwork and scientific development.
+
 awards:
   - year: 2022
     items:
-      - "Grant: European Union Marie Skłodowska-Curie Actions (188,542 EUR)"
+      - when: Mar
+        text: "Grant – European Union Marie Skłodowska-Curie Actions Postdoctoral Fellowship (€188,590)"
   - year: 2019
     items:
-      - "Genetics Society Training Grant (£500)"
+      - when: Mar
+        text: "Grant – Genetics Society Training Grant (£500)"
   - year: 2017
     items:
-      - "'Lost in Parameter Space', 2017, Paris, Stevens, Catchen. Top Downloaded Article 2017-2018 and top 20 most read paper in Methods in Ecology and Evolution"
+      - text: "Publication award – “Lost in Parameter Space”: top downloaded article 2017–2018 and top-40 most-read article in Methods in Ecology and Evolution"
   - year: 2016
     items:
-      - "Genetics Society Training Grant (£500)"
-      - "FSBI Small Research Grant (£4900)"
-      - "University of Exeter Research Enhancement Fund (£480)"
-      - "Genetics Society Training Grant (£700)"
-      - "Santander Postgraduate Research Award (£500)"
-      - "Award nomination: Linnean Society of London nomination for The Bicentenary Medal"
+      - when: Mar
+        text: "Grant – FSBI Small Research Grant (£4,900)"
+      - when: Mar
+        text: "Grant – University of Exeter Research Enhancement Fund (£480)"
+      - when: Feb
+        text: "Grant – Genetics Society Training Grant (£700)"
+      - when: Jan
+        text: "Grant – Santander Postgraduate Research Award (£500)"
   - year: 2015
     items:
-      - "FSBI Small Research Grant (£1000)"
-      - "GBS Workshop Funding, The Genome Analysis Centre (TGAC) (€800)"
-      - "University of Exeter Research Enhancement Fund (£500)"
+      - text: "Award nomination – Linnean Society of London, The Bicentenary Medal"
   - year: 2014
     items:
-      - "Genetics Society Junior Scientist Travel Grant (£750)"
+      - when: Nov
+        text: "Grant – FSBI Small Research Grant (£1,000)"
+      - when: Oct
+        text: "Grant – GBS Workshop Funding, The Genome Analysis Centre (TGAC) (€800)"
+      - when: Aug
+        text: "Grant – University of Exeter Research Enhancement Fund (£500)"
   - year: 2013
     items:
-      - "NoWPaS 2013 Conference Committee (£21,000, as a committee of six)"
+      - when: Nov
+        text: "Grant – Genetics Society Junior Scientist Travel Grant (£750)"
+      - when: Apr
+        text: "Funding – NoWPaS 2013 Conference Committee (£21,000)"
   - year: 2012
     items:
-      - "John Maynard Smith Award for Ecology and Conservation (2012), University of Sussex"
-
-other:
-  - "Director of the Workshop on Genomics (2023–present)"
-  - "Co-Director for the Workshop on Genomics (2018–present)"
-  - "Teaching Assistant for the Workshop on Genomics (2015–2018)"
-  - "Graduate Teaching Assistant, Coral Reef Field Course, The Bahamas, University of Exeter (2013–2018)"
+      - text: "Award – John Maynard Smith Award for Ecology and Conservation, University of Sussex"

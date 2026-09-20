@@ -16,13 +16,15 @@ layout: default
 
       {{ content }}
 
-      {%- assign pubs = site.data.publications.published | where_exp: "p", "p.projects contains page.slug" -%}
+      {%- assign pubs    = site.data.publications.published | where_exp: "p", "p.projects contains page.slug" -%}
       {%- assign reviews = site.data.publications.in_review | where_exp: "p", "p.projects contains page.slug" -%}
-      {%- if pubs.size > 0 or reviews.size > 0 -%}
+      {%- assign prep    = site.data.publications.pipeline  | where_exp: "p", "p.projects contains page.slug" -%}
+      {%- if pubs.size > 0 or reviews.size > 0 or prep.size > 0 -%}
         <h2 id="publications">Publications</h2>
         <ol class="pubs">
+          {%- for pub in prep    -%}{% include pub.html pub=pub status="In preparation" %}{%- endfor -%}
           {%- for pub in reviews -%}{% include pub.html pub=pub status="In review" %}{%- endfor -%}
-          {%- for pub in pubs -%}{% include pub.html pub=pub %}{%- endfor -%}
+          {%- for pub in pubs    -%}{% include pub.html pub=pub %}{%- endfor -%}
         </ol>
       {%- endif -%}
     </div>

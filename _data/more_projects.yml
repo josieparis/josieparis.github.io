@@ -1,10 +1,14 @@
 # Projects listed on the site that don't have a write-up page yet.
 # When one gets a page, move it into _projects/ as a Markdown file and
 # delete it from here.
+- title: Mule deer
+  note: Population and landscape genomics of chronic wasting disease transmission (Colorado State University)
+- title: Rosy finches
+  note: Demographic modelling of North American Leucosticte finches
 - title: Italian sparrows
-  note: Convergent adaptation to urban environments
+  note: URBANAPT – convergent adaptation to urban environments
 - title: Lobsters
-  note: Reference genome and expression atlas for the European lobster
+  note: Reference genome and tissue expression atlas for the European lobster
 - title: Salmonids
   note: Population genetics of brown trout and Atlantic salmon
 - title: Shearwaters

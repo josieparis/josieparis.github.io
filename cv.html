@@ -2,7 +2,6 @@
 layout: page
 title: CV
 permalink: /cv/
-lede: Where I've worked, what I've studied, and what I've been given money to do.
 ---
 
 <section class="cv-section">
@@ -26,7 +25,7 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
       to detect signatures of balancing selection (specifically NFDS) in the Trinidadian guppy
       (<em>Poecilia reticulata</em>). One year into this postdoc, my PI was offered a position at
       the University of Exeter, so I moved back again to Exeter! This postdoctoral position lasted
-      more than 4 years, where, alongside my main research line, I undertook analyses to detect
+      nearly four years, where, alongside my main research line, I undertook analyses to detect
       convergent evolution and rapid adaptation.
     </p>
     <p>
@@ -47,13 +46,16 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
       I was then awarded a Marie Skłodowska-Curie Fellowship to investigate the genomic signatures
       of rapid adaptation in the King penguin (<em>Aptenodytes patagonicus</em>). I generated the
       chromosome-level reference genome for the species. I'm still working on the genomic analyses
-      (the MSCA finished in May 2025).
+      (the MSCA finished in April 2025).
     </p>
     <p>
-      I moved to the US in May 2025, where I'm currently a visiting researcher, working with
-      Kristen Ruegg on constructing the demographic history of rosy finches
-      (<em>Leucosticte</em> sp.). I'll soon be starting a postdoc with Chris Funk on genomics of
-      chronic wasting disease (CWD) transmission in mule deer (<em>Odocoileus hemionus</em>).
+      I moved to the US in May 2025 as a visiting researcher at Colorado State University, working
+      with Kristen Ruegg on the demographic history of rosy finches (<em>Leucosticte</em> sp.).
+      Alongside this, from August to October 2025 I was an affiliated researcher at the University
+      of Milan, working with Carlo Polidori on convergent adaptation to urban environments in the
+      Italian house sparrow (<em>Passer italiae</em>). Since February 2026 I have been a Research
+      Scientist at Colorado State University, working with Chris Funk on the genomics of chronic
+      wasting disease (CWD) transmission in mule deer (<em>Odocoileus hemionus</em>).
     </p>
   </div>
 </section>
@@ -74,6 +76,7 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
         <p class="timeline__meta">
           <span>{{ job.dates }}</span>
           {%- if job.pi %}<span>PI: {{ job.pi }}</span>{% endif -%}
+          {%- if job.funder %}<span>Funder: {{ job.funder }}</span>{% endif -%}
         </p>
         {%- if job.topic %}<p class="timeline__topic">{{ job.topic }}</p>{% endif -%}
       </div>
@@ -83,28 +86,16 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
 </section>
 
 <section class="cv-section">
-  <h2>Professional experience</h2>
-  <ul class="stack">
-    {%- for item in site.data.cv.professional -%}
-    <li>
-      <h3>{{ item.title }}</h3>
-      {%- if item.meta %}<p class="meta">{{ item.meta }}</p>{% endif -%}
-      <p>{{ item.body }}
-        {%- if item.link_url %} <a href="{{ item.link_url }}" rel="noopener" target="_blank">{{ item.link_text }} →</a>{% endif -%}
-      </p>
-    </li>
-    {%- endfor -%}
-  </ul>
-</section>
-
-<section class="cv-section">
   <h2>Education</h2>
   <ul class="stack">
     {%- for ed in site.data.cv.education -%}
     <li>
       <h3>{{ ed.degree }}</h3>
       <p class="meta">{{ ed.org }} · {{ ed.dates }}</p>
-      {%- if ed.thesis %}<p><em>{{ ed.thesis }}</em></p>{% endif -%}
+      {%- if ed.supervisors %}<p class="meta">Supervisors: {{ ed.supervisors }}{% if ed.funders %} · Funders: {{ ed.funders }}{% endif %}</p>{% endif -%}
+      {%- if ed.body %}<p>{{ ed.body }}</p>{% endif -%}
+      {%- if ed.thesis %}<p>Thesis: <em>{{ ed.thesis }}</em></p>{% endif -%}
+      {%- if ed.note %}<p class="meta">{{ ed.note }}</p>{% endif -%}
     </li>
     {%- endfor -%}
   </ul>
@@ -115,7 +106,65 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
   <ul class="stack">
     {%- for s in site.data.cv.secondments -%}
     <li>
-      <h3>{{ s.year }}</h3>
+      <h3>{{ s.org }}</h3>
+      <p class="meta">{{ s.dates }} · Host{% if s.hosts contains '&amp;' %}s{% endif %}: {{ s.hosts }}</p>
+      <p>{{ s.aim }} {{ s.output }}</p>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Professional experience</h2>
+  <ul class="stack">
+    {%- for item in site.data.cv.professional -%}
+    <li>
+      <h3>{{ item.title }}</h3>
+      <p class="meta">{% if item.org %}{{ item.org }} · {% endif %}{{ item.meta }}</p>
+      {%- if item.body -%}
+      <p>{{ item.body }}
+        {%- if item.link_url %} <a href="{{ item.link_url }}" rel="noopener" target="_blank">{{ item.link_text }} →</a>{% endif -%}
+      </p>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Software &amp; resources</h2>
+  <ul class="bullets">
+    {%- for s in site.data.cv.software -%}
+    <li>{% if s.url %}<a href="{{ s.url }}" rel="noopener" target="_blank"><b>{{ s.name }}</b></a>{% else %}<b>{{ s.name }}</b>{% endif %} — {{ s.desc }}</li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Teaching</h2>
+  <ul class="stack">
+    {%- for t in site.data.cv.teaching -%}
+    <li>
+      <h3>{{ t.title }}</h3>
+      <p class="meta">{{ t.org }} · {{ t.when }}</p>
+      {%- if t.body %}<p>{{ t.body }}</p>{% endif -%}
+      {%- if t.items -%}
+      <ul class="bullets bullets--tight">
+        {%- for i in t.items -%}<li>{{ i }}</li>{%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Supervision &amp; mentoring</h2>
+  <ul class="stack">
+    {%- for s in site.data.cv.supervision -%}
+    <li>
+      <h3>{{ s.who }} <span class="stack__tag">{{ s.level }}</span></h3>
+      <p class="meta">{{ s.role }} · {{ s.org }} · {{ s.when }}</p>
       <p>{{ s.body }}</p>
     </li>
     {%- endfor -%}
@@ -123,22 +172,44 @@ lede: Where I've worked, what I've studied, and what I've been given money to do
 </section>
 
 <section class="cv-section">
-  <h2>Grants &amp; awards</h2>
+  <h2>Organisation of conferences &amp; workshops</h2>
   <ol class="awards">
-    {%- for group in site.data.cv.awards -%}
+    {%- for o in site.data.cv.organisation -%}
     <li class="awards__row">
-      <div class="awards__year">{{ group.year }}</div>
-      <ul class="awards__items">
-        {%- for item in group.items -%}<li>{{ item }}</li>{%- endfor -%}
-      </ul>
+      <div class="awards__year">{{ o.when }}</div>
+      <ul class="awards__items"><li>{{ o.text }}</li></ul>
     </li>
     {%- endfor -%}
   </ol>
 </section>
 
 <section class="cv-section">
-  <h2>Other stuff</h2>
-  <ul class="bullets">
-    {%- for item in site.data.cv.other -%}<li>{{ item }}</li>{%- endfor -%}
-  </ul>
+  <h2>Invited talks</h2>
+  <ol class="awards">
+    {%- for k in site.data.cv.talks.keynotes -%}
+    <li class="awards__row">
+      <div class="awards__year">{{ k.when }}</div>
+      <ul class="awards__items"><li>{{ k.text }}</li></ul>
+    </li>
+    {%- endfor -%}
+  </ol>
+  <h3>Invited research seminars</h3>
+  <p class="prose">{{ site.data.cv.talks.seminars | join: "; " }}.</p>
+</section>
+
+<section class="cv-section">
+  <h2>Grants &amp; awards</h2>
+  {%- if site.data.cv.awards_summary %}<p class="prose">{{ site.data.cv.awards_summary }}</p>{% endif -%}
+  <ol class="awards">
+    {%- for group in site.data.cv.awards -%}
+    <li class="awards__row">
+      <div class="awards__year">{{ group.year }}</div>
+      <ul class="awards__items">
+        {%- for item in group.items -%}
+        <li>{% if item.when %}<span class="awards__when">{{ item.when }}</span> {% endif %}{{ item.text }}</li>
+        {%- endfor -%}
+      </ul>
+    </li>
+    {%- endfor -%}
+  </ol>
 </section>
