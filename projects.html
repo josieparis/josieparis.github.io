@@ -30,13 +30,16 @@ permalink: /projects/
     {%- if s.link %}{% assign href = s.link | relative_url %}{% elsif s.url %}{% assign href = s.url %}{% endif -%}
     <li>
       {%- if href -%}
-      <a class="system system--link" href="{{ href }}"{% if s.url %} rel="noopener" target="_blank"{% endif %}>
+      <a class="system system--link" href="{{ href }}"{% if s.url %} rel="noopener" target="_blank"{% endif %}{% if s.paper %} title="{{ s.paper | escape }}"{% endif %}>
       {%- else -%}
-      <div class="system">
+      <div class="system"{% if s.paper %} title="{{ s.paper | escape }}"{% endif %}>
       {%- endif -%}
         <h3 class="system__title">{{ s.title }}{% if s.current %} <span class="pill pill--current">Current</span>{% endif %}</h3>
         {%- if s.species %}<p class="system__species">{{ s.species }}</p>{% endif -%}
-        {%- if s.paper %}<p class="system__paper">{{ s.paper }}</p>{% endif -%}
+        {%- if s.silhouette -%}
+        <div class="system__sil" role="img" aria-label="Silhouette of {{ s.silhouette_of | default: s.title }}"
+             style="--sil: url('{{ s.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}')"></div>
+        {%- endif -%}
         {%- if s.blurb %}<p class="system__blurb">{{ s.blurb }}</p>{% endif -%}
         {%- if s.link %}<p class="system__more">{{ s.link_text | default: "Read more" }} →</p>
         {%- elsif s.url %}<p class="system__more">{{ s.link_text | default: s.url | remove: 'https://' | split: '/' | first }} ↗</p>{% endif -%}
@@ -44,5 +47,14 @@ permalink: /projects/
     </li>
     {%- endfor -%}
   </ul>
+
+  {%- assign credited = theme.systems | where_exp: "s", "s.silhouette" -%}
+  {%- if credited.size > 0 -%}
+  <p class="theme__credit">
+    Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
+    {%- assign artists = credited | map: "silhouette_credit" | uniq | sort -%}
+    {%- for a in artists %}{% if forloop.first %} by {% elsif forloop.last %} and {% else %}, {% endif %}{{ a }}{% endfor %} (public domain).
+  </p>
+  {%- endif -%}
 </section>
 {%- endfor -%}

@@ -4,12 +4,15 @@
 #   id:        anchor for the jump-links (letters, digits, hyphens)
 #   title:     section heading
 #   intro:     optional one or two sentences under the heading (currently unused)
-#   image:     a file in assets/img/ shown beside the intro (optional)
+#   image:     optional photo beside the heading (currently unused)
 #   systems:   the cards. Each has:
 #     title:   card heading
 #     species: Latin name(s), rendered in italics (optional)
 #     blurb:   one to three sentences (optional)
-#     paper:   a paper title, shown in place of / above the blurb (optional)
+#     paper:   a paper title; shown as the card's hover tooltip (optional)
+#     silhouette / silhouette_of / silhouette_credit / silhouette_url:
+#              a PhyloPic SVG in assets/img/phylopic/, the taxon it depicts, the
+#              artist, and the PhyloPic page — rendered as an icon + a credit line
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
 #     url:     external link instead of `link` (optional)
 #     link_text: label for the link line; defaults to the URL's host (optional)
@@ -20,8 +23,6 @@
 
 - id: adaptation
   title: Rapid adaptation to changing environments
-  image: guppy.jpg
-  image_alt: A male Trinidadian guppy
   systems:
     - title: Trinidadian guppies
       species: Poecilia reticulata
@@ -59,8 +60,6 @@
 
 - id: conservation
   title: Conservation and wildlife genomics
-  image: podarcis-raffonei.jpg
-  image_alt: An Aeolian wall lizard
   systems:
     - title: Mule deer and chronic wasting disease
       species: Odocoileus hemionus
@@ -104,8 +103,6 @@
 
 - id: demography
   title: Demography, biogeography and speciation
-  image: podarcis-siculus.jpg
-  image_alt: An Italian wall lizard
   systems:
     - title: Mediterranean wall lizards
       species: Podarcis siculus and relatives
@@ -134,53 +131,83 @@
 
 - id: genomes
   title: Reference genome assemblies
-  image: king-penguins.jpg
-  image_alt: A King penguin colony
   systems:
     - title: King penguin
       species: Aptenodytes patagonicus
+      silhouette: king-penguin.svg
+      silhouette_of: Aptenodytes patagonicus
+      silhouette_credit: Steven Traver
+      silhouette_url: https://www.phylopic.org/images/21c50828-58d8-42df-9219-2c1b0fb57c99
       paper: "A chromosome-level genome of the King penguin (Aptenodytes patagonicus): an emerging model in the wild for studying evolution"
       url: https://doi.org/10.1101/2025.03.13.642884
       link_text: Preprint on bioRxiv
 
     - title: European lobster
       species: Homarus gammarus
+      silhouette: lobster.svg
+      silhouette_of: Homarus gammarus
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/8d538340-49b0-4950-8dbc-ad4942363bb5
       paper: "A high-quality reference genome and tissue expression atlas for the European lobster (Homarus gammarus)"
       url: https://doi.org/10.1093/gbe/evag138
       link_text: Genome Biology and Evolution
 
     - title: European leaf-toed gecko
       species: Euleptes europaea
+      silhouette: gecko.svg
+      silhouette_of: Euleptes europaea
+      silhouette_credit: Jose Carlos Arenas-Monroy
+      silhouette_url: https://www.phylopic.org/images/4c92d506-8e20-40a6-b9e4-f29758bfe3a0
       paper: "Chromosome-level genome assembly of the European leaf-toed gecko, Euleptes europaea"
       url: https://doi.org/10.64898/2026.08.10.744031
       link_text: Preprint on bioRxiv
 
     - title: Tyrrhenian tree frog
       species: Hyla sarda
+      silhouette: tree-frog.svg
+      silhouette_of: Hyla versicolor
+      silhouette_credit: Will Booker
+      silhouette_url: https://www.phylopic.org/images/c07ce7b7-5fb5-484f-83a0-567bb0795e18
       paper: "Chromosome-level genome assembly of the Tyrrhenian tree frog, Hyla sarda"
       url: https://doi.org/10.1038/s41597-025-05760-9
       link_text: Scientific Data
 
     - title: Black-legged kittiwake
       species: Rissa tridactyla
+      silhouette: kittiwake.svg
+      silhouette_of: Rissa tridactyla
+      silhouette_credit: annalippold
+      silhouette_url: https://www.phylopic.org/images/71526878-5cc3-4456-8785-69336ac3c93e
       paper: "A chromosome-level reference genome for the black-legged kittiwake (Rissa tridactyla), a declining circumpolar seabird"
       url: https://doi.org/10.1093/gbe/evad153
       link_text: Genome Biology and Evolution
 
     - title: Pink sea fan
       species: Eunicella verrucosa
+      silhouette: sea-fan.svg
+      silhouette_of: Eunicella labiata
+      silhouette_credit: Zhishuang Yang
+      silhouette_url: https://www.phylopic.org/images/ceb43ffb-372b-4ea4-83d6-93ad54989f92
       paper: "The first genome of the cold-water octocoral, the pink sea fan, Eunicella verrucosa"
       url: https://doi.org/10.1093/gbe/evad083
       link_text: Genome Biology and Evolution
 
     - title: Eurasian woodcock
       species: Scolopax rusticola
+      silhouette: woodcock.svg
+      silhouette_of: Scolopax rusticola
+      silhouette_credit: Craig Nash
+      silhouette_url: https://www.phylopic.org/images/68652b89-95d8-46d7-9519-ee9d49733eac
       paper: "ERGA-BGE reference genome of the Eurasian Woodcock (Scolopax rusticola), a game bird species with isolated populations of conservation interest"
       url: https://doi.org/10.12688/openreseurope.23370.1
       link_text: Open Research Europe
 
     - title: White perch
       species: Morone americana
+      silhouette: white-perch.svg
+      silhouette_of: Morone chrysops
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/bae30310-1dbd-4057-b673-abc8ebd9f7a9
       paper: "Two genomes of the white perch (Morone americana), an ecologically important teleost"
       url: https://doi.org/10.1093/jhered/esaf034
       link_text: Journal of Heredity
