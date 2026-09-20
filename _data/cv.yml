@@ -196,6 +196,7 @@ software:
     url: https://github.com/JimWhiting91/afvaper
     paper_url: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13952
 
+# Not shown on the site since 2026-09-20 (section removed at the user's request); kept for reference.
 teaching:
   - when: "2026"
     title: BZ-425 Conservation and Population Genomics (undergraduate course)

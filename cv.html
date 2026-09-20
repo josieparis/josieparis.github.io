@@ -141,24 +141,6 @@ permalink: /cv/
 </section>
 
 <section class="cv-section">
-  <h2>Teaching</h2>
-  <ul class="stack">
-    {%- for t in site.data.cv.teaching -%}
-    <li>
-      <h3>{{ t.title }}</h3>
-      <p class="meta">{{ t.org }} · {{ t.when }}</p>
-      {%- if t.body %}<p>{{ t.body }}</p>{% endif -%}
-      {%- if t.items -%}
-      <ul class="bullets bullets--tight">
-        {%- for i in t.items -%}<li>{{ i }}</li>{%- endfor -%}
-      </ul>
-      {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
-</section>
-
-<section class="cv-section">
   <h2>Supervision &amp; mentoring</h2>
   <ul class="stack">
     {%- for s in site.data.cv.supervision -%}
