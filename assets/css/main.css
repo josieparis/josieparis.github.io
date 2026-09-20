@@ -229,17 +229,12 @@ main { min-height: 60vh; padding-bottom: 5rem; }
   list-style: none; margin: 1.25rem 0 0; padding: 0;
 }
 
-.menagerie-wrap { margin-top: -.5rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
+.menagerie-wrap { margin-top: -.5rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
 .menagerie {
   display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
   gap: .4rem .9rem; list-style: none; margin: 0; padding: 1.25rem 0 0;
   border-top: 1px solid var(--line);
 }
-.menagerie__label {
-  margin: 1.1rem 0 0; text-align: center;
-  font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
-}
-.menagerie__label + .menagerie { border-top: 0; padding-top: .6rem; }
 .menagerie a { display: block; padding: .35rem; border-radius: 8px; }
 .menagerie__sil {
   display: block; width: calc(58px * var(--sil-scale, 1)); height: 46px;
