@@ -49,12 +49,15 @@ permalink: /projects/
             {%- assign hit = allpubs | where: "doi", key | first -%}
             {%- unless hit %}{% assign hit = allpubs | where: "preprint", key | first %}{% endunless -%}
             {%- unless hit %}{% assign hit = allpubs | where: "url", key | first %}{% endunless -%}
+            {%- unless hit %}{% assign hit = allpubs | where: "title", key | first %}{% endunless -%}
+            {%- assign href = nil -%}
+            {%- if key contains "://" %}{% assign href = key %}{% elsif hit %}{% assign href = hit.doi | default: hit.preprint | default: hit.url %}{% endif -%}
             <li>
               {%- if hit -%}
-              <a href="{{ key }}" rel="noopener" target="_blank">{{ hit.title }}</a>
-              <span class="system__paper-meta">{{ hit.venue | split: "," | first }}{% if hit.year %} · {{ hit.year }}{% endif %}</span>
+              {%- if href %}<a href="{{ href }}" rel="noopener" target="_blank">{{ hit.title }}</a>{% else %}<span class="system__paper-title">{{ hit.title }}</span>{% endif -%}
+              <span class="system__paper-meta">{% if hit.year %}{{ hit.venue | split: "," | first }} · {{ hit.year }}{% else %}{{ hit.venue }}{% endif %}</span>
               {%- else -%}
-              <a href="{{ key }}" rel="noopener" target="_blank">{{ key }}</a> <span class="system__paper-meta">not found in publications.yml</span>
+              <span class="system__paper-title">{{ key }}</span> <span class="system__paper-meta">not found in publications.yml</span>
               {%- endif -%}
             </li>
           {%- endfor -%}
@@ -72,11 +75,15 @@ permalink: /projects/
     {%- endfor -%}
   </ul>
 
-  {%- assign credited = theme.systems | where_exp: "s", "s.silhouette" -%}
-  {%- if credited.size > 0 -%}
-  <p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
-    {%- assign licensed = credited | where_exp: "s", "s.silhouette_license" -%}
-    {%- for s in licensed %}; <em>{{ s.silhouette_of | default: s.title }}</em> by <a href="{{ s.silhouette_url }}" rel="noopener" target="_blank">{{ s.silhouette_credit }}</a> (<a href="{{ s.silhouette_license_url }}" rel="license noopener" target="_blank">{{ s.silhouette_license }}</a>){% endfor %}</p>
-  {%- endif -%}
 </section>
 {%- endfor -%}
+
+{%- comment -%} One credit line for the whole page; only non-public-domain images name their artist. {%- endcomment -%}
+<p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
+  {%- assign seen = "" -%}
+  {%- for theme in site.data.themes -%}{%- for s in theme.systems -%}
+    {%- if s.silhouette_license and seen contains s.silhouette_url -%}{%- elsif s.silhouette_license -%}
+      {%- assign seen = seen | append: s.silhouette_url | append: " " -%}
+      ; <em>{{ s.silhouette_of | default: s.title }}</em> by <a href="{{ s.silhouette_url }}" rel="noopener" target="_blank">{{ s.silhouette_credit }}</a> (<a href="{{ s.silhouette_license_url }}" rel="license noopener" target="_blank">{{ s.silhouette_license }}</a>)
+    {%- endif -%}
+  {%- endfor -%}{%- endfor -%}</p>

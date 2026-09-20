@@ -19,8 +19,9 @@
 #     url:     external link instead of `link` (optional)
 #     link_text: label for the link line; defaults to the URL's host (optional)
 #     links:   several links instead of one: a list of {text, url} (optional)
-#     papers:  list of DOI/preprint URLs exactly as written in publications.yml;
-#              each is looked up there and rendered as title + journal + year (optional)
+#     papers:  list of DOI/preprint URLs — or, for work with no link yet, the exact
+#              title — as written in publications.yml; each is looked up there and
+#              rendered as title + journal + year (optional)
 #     current: true to show a "Current" pill (optional)
 #
 # A species can appear under more than one theme — that's the point.
@@ -90,71 +91,91 @@
   systems:
     - title: Mule deer and chronic wasting disease
       species: Odocoileus hemionus
-      blurb: >-
-        Population and landscape genomics of CWD transmission, with Chris Funk at Colorado
-        State University — plus a critical reanalysis of genomic prediction for CWD in
-        white-tailed deer.
+      silhouette: mule-deer.svg
+      silhouette_of: Odocoileus hemionus
+      silhouette_credit: xgirouxb
+      silhouette_url: https://www.phylopic.org/images/f889b336-9e67-4154-bc96-db4095a55be2
       current: true
+      papers:
+        - "In-sample accuracy is not evidence of transferability: a reanalysis of genomic prediction for chronic wasting disease (CWD) in white-tailed deer"
 
     - title: Aeolian wall lizard
       species: Podarcis raffonei
-      blurb: >-
-        Genetic monitoring of Europe's most endangered reptile: does hybridisation with the
-        invasive Italian wall lizard threaten the population on Vulcano?
+      silhouette: aeolian-lizard.svg
+      silhouette_of: Podarcis erhardii
+      silhouette_credit: Alex Slavenko
+      silhouette_url: https://www.phylopic.org/images/bf7d9c5f-83c0-435a-b09f-dc6111ece257
+      papers:
+        - https://doi.org/10.1016/j.isci.2024.111097
 
     - title: Rosy finches
       species: Leucosticte
-      blurb: >-
-        Demographic modelling of Black, Brown-capped and Gray-crowned rosy finches, and the
-        loss of adaptive capacity that drives climate vulnerability in this alpine specialist
-        complex, with Kristen Ruegg.
+      silhouette: rosy-finch.svg
+      silhouette_of: Leucosticte atrata
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/8a166a31-7aa7-44d8-8db2-38da91b08b92
       current: true
+      papers:
+        - "Loss of adaptive capacity drives climate vulnerability across taxonomic scales in an alpine specialist species complex"
 
     - title: Chalk-stream Atlantic salmon
       species: Salmo salar
-      blurb: >-
-        The salmon of southern England's chalk streams are genetically unique — the case for
-        recognising them as a distinct management unit.
+      silhouette: salmon.svg
+      silhouette_of: Salmo salar
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/f6c6590d-8aa1-4d08-a25f-e6c90727c071
+      papers:
+        - https://doi.org/10.1111/jfb.13538
 
     - title: European lobster
       species: Homarus gammarus
-      blurb: >-
-        Genetic divergence and adaptation of an isolated population in the Netherlands, and
-        genomic tools for aquaculture and restocking (BBSRC AquaLeap).
+      silhouette: lobster.svg
+      silhouette_of: Homarus gammarus
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/8d538340-49b0-4950-8dbc-ad4942363bb5
+      papers:
+        - https://doi.org/10.1093/icesjms/fsae059
 
     - title: Nassau grouper
       species: Epinephelus striatus
-      blurb: >-
-        RAD-seq and in situ monitoring of spawning aggregations in The Bahamas reveal
-        fine-scale population structure and the origins of aggregating fish.
+      silhouette: grouper.svg
+      silhouette_of: Epinephelus
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/86c40d81-2613-4bb4-ad57-fb460be56ae5
+      papers:
+        - https://doi.org/10.3389/fmars.2020.00157
 
 - id: demography
   title: Demography, biogeography and speciation
   systems:
     - title: Mediterranean wall lizards
       species: Podarcis siculus and relatives
-      blurb: >-
-        Reconstructing the complex colonisation histories of lizards across Mediterranean
-        archipelagos — and showing that genetic depletion doesn't prevent rapid evolution in
-        island-introduced lizards.
+      silhouette: wall-lizard.svg
+      silhouette_of: Podarcis lilfordi
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/d4c856c6-49b3-4b48-ad1f-1bbbc8cf58fa
+      papers:
+        - https://doi.org/10.1111/jbi.14739
+        - https://doi.org/10.1002/ece3.10721
 
     - title: Shearwaters and other pelagic seabirds
-      blurb: >-
-        Species delimitation with genomic data across a speciation continuum, and how
-        pervasive, recurrent hybridisation prevents inbreeding depression in Europe's most
-        threatened seabird.
-
-    - title: A seabird contact zone
-      blurb: >-
-        When hybrids take an intermediate route — genetic ancestry shapes migration across the
-        contact zone of two closely related seabirds.
+      silhouette: shearwater.svg
+      silhouette_of: Puffinus griseus
+      silhouette_credit: Juan Carlos Jerí
+      silhouette_url: https://www.phylopic.org/images/a8ecc1e9-f339-4d85-84c3-aa2fff47b2c1
+      papers:
+        - https://doi.org/10.1073/pnas.2427223122
+        - "When hybrids take an intermediate route: genetic ancestry shapes migration across a seabird contact zone"
+        - https://doi.org/10.1016/j.ympev.2022.107671
 
     - title: Emperor penguins
       species: Aptenodytes forsteri
-      blurb: >-
-        Demographic history and selective sweeps from whole genomes of Emperor, King and
-        outgroup penguins, and the gene-expression shifts underlying life in the extreme
-        Antarctic.
+      silhouette: emperor-penguin.svg
+      silhouette_of: Aptenodytes forsteri
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/f2e02022-2700-484d-a66d-b2a900030371
+      papers:
+        - https://doi.org/10.1111/mec.17552
 
 - id: genomes
   title: Reference genome assemblies
