@@ -66,7 +66,10 @@ permalink: /cv/
     {%- for job in site.data.cv.employment -%}
     <li class="timeline__item">
       <div class="timeline__media">
-        {%- if job.image -%}
+        {%- if job.silhouette -%}
+        <div class="timeline__sil" aria-hidden="true"
+             style="--sil: url('{{ job.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}'){% if job.silhouette_scale %}; --sil-scale: {{ job.silhouette_scale }}{% endif %}"></div>
+        {%- elsif job.image -%}
         <img src="{{ job.image | prepend: '/assets/img/' | relative_url }}" alt="" loading="lazy">
         {%- endif -%}
       </div>
@@ -83,6 +86,8 @@ permalink: /cv/
     </li>
     {%- endfor -%}
   </ol>
+  <p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
+    {%- for job in site.data.cv.employment -%}{%- if job.silhouette_license %}; <em>{{ job.silhouette_of }}</em> by <a href="{{ job.silhouette_url }}" rel="noopener" target="_blank">{{ job.silhouette_credit }}</a> (<a href="{{ job.silhouette_license_url }}" rel="license noopener" target="_blank">{{ job.silhouette_license }}</a>){% endif -%}{%- endfor -%}</p>
 </section>
 
 <section class="cv-section">

@@ -12,7 +12,7 @@ employment:
     topic: >-
       Population and landscape genomics to understand the transmission of Chronic Wasting
       Disease (CWD) in mule deer (<em>Odocoileus hemionus</em>): genome annotation, WGS.
-    image: cv-mule-deer.jpg
+    silhouette: mule-deer.svg
 
   - role: Visiting Researcher (Guest Associate)
     org: Colorado State University, USA
@@ -22,7 +22,7 @@ employment:
     topic: >-
       Demographic modelling of North American rosy finches (<em>Leucosticte</em> sp.: Black,
       Brown-capped and Gray-crowned): WGS.
-    image: cv-rosy-finch.jpg
+    silhouette: rosy-finch.svg
 
   - role: Affiliated Researcher
     org: University of Milan, Italy
@@ -32,7 +32,7 @@ employment:
     topic: >-
       URBANAPT – convergent adaptation to urban environments in the Italian house sparrow
       (<em>Passer italiae</em>): WGS.
-    image: cv-sparrow.png
+    silhouette: sparrow.svg
 
   - role: MSCA Postdoctoral Fellow
     org: Marche Polytechnic University, Italy
@@ -43,14 +43,15 @@ employment:
       Poly2Adapt – quantifying polygenic selection in real-time adaptation to climate change.
       Detecting signatures of rapid adaptation to climate change in the King penguin
       (<em>Aptenodytes patagonicus</em>): genome assembly &amp; annotation, WGS.
-    image: cv-king-penguin.png
+    silhouette: king-penguin.svg
 
   - role: Postdoctoral Research Associate
     org: University of Exeter, UK
     dates: Feb – Apr 2023
     pi: Jamie Stevens
     topic: "UK salmonid population genetics: RAD-seq."
-    image: cv-salmon.jpeg
+    silhouette: salmon.svg
+    silhouette_scale: 0.7
 
   - role: Postdoctoral Research Associate
     org: University of L'Aquila, Italy
@@ -62,7 +63,7 @@ employment:
       Mediterranean reptiles: Aeolian wall lizard (<em>Podarcis raffonei</em>), Italian wall
       lizard (<em>Podarcis siculus</em>), European leaf-toed gecko (<em>Euleptes europaea</em>):
       RAD-seq, WGS.
-    image: cv-lizard.jpg
+    silhouette: aeolian-lizard.svg
 
   - role: Postdoctoral Research Associate
     org: University of Exeter, UK
@@ -72,7 +73,7 @@ employment:
     topic: >-
       Development of genomic tools for the European lobster (<em>Homarus gammarus</em>):
       genome assembly &amp; annotation, GWAS with RAD-seq, epigenetics with RRBS.
-    image: cv-lobster.jpg
+    silhouette: lobster.svg
 
   - role: Postdoctoral Research Associate
     org: University of Sussex / University of Exeter, UK
@@ -84,7 +85,13 @@ employment:
       balancing selection, convergent evolution and rapid adaptation: genome assembly, WGS,
       Pool-seq and RAD-seq. The contract began at the University of Sussex (1 year); the group
       moved to the University of Exeter when the PI took up a new position.
-    image: cv-guppies.jpg
+    silhouette: guppy.svg
+    silhouette_scale: 0.7
+    silhouette_of: Poecilia reticulata
+    silhouette_credit: Josefine Bohr Brask
+    silhouette_url: https://www.phylopic.org/images/91a45685-b669-48ee-8c31-1be12a0f511a
+    silhouette_license: CC BY-NC-SA 3.0
+    silhouette_license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
   - role: Graduate Research Assistant
     org: University of Exeter, UK
@@ -95,7 +102,7 @@ employment:
       Cost-effective genetic monitoring tools for salmonids (microsatellites, SNP-chip; CEFAS).
       Development and promotion of lateral flow devices to detect the chytrid fungus
       <em>Batrachochytrium dendrobatidis</em>.
-    image: cv-frogs.jpg
+    silhouette: tree-frog.svg
 
 education:
   - degree: PhD in Molecular Ecology and Evolution

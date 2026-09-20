@@ -293,6 +293,7 @@
     - title: "Lost in parameter space: a road map for Stacks"
       image: methods/radseq.svg
       image_alt: RAD-seq reads stacked at restriction cut sites along a DNA molecule
+      blurb: A method for assembling de novo loci from RAD-seq data.
       url: https://doi.org/10.1111/2041-210X.12775
       link_text: Methods in Ecology and Evolution
 
