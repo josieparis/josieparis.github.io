@@ -257,11 +257,9 @@
 - id: methods
   title: Methods and training
   systems:
-    - title: A road map for Stacks
-      blurb: >-
-        “Lost in parameter space” — how to choose de novo RAD-seq assembly parameters, and one
-        of Methods in Ecology and Evolution's most-read papers.
+    - title: "Lost in parameter space: a road map for Stacks"
       url: https://doi.org/10.1111/2041-210X.12775
+      link_text: Methods in Ecology and Evolution
 
     - title: AF-vapeR
       blurb: >-
@@ -274,9 +272,7 @@
           url: https://github.com/JimWhiting91/afvaper
 
     - title: The power of trios
-      blurb: >-
-        Using parent–offspring trios to infer population-genetic parameters — mutation and
-        recombination rates — in non-model species.
+      blurb: Using parent–offspring trios to infer population-genetic parameters in non-model species.
       current: true
 
     - title: Small reusable tools
