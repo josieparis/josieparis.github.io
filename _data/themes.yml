@@ -16,6 +16,7 @@
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
 #     url:     external link instead of `link` (optional)
 #     link_text: label for the link line; defaults to the URL's host (optional)
+#     links:   several links instead of one: a list of {text, url} (optional)
 #     current: true to show a "Current" pill (optional)
 #
 # A species can appear under more than one theme — that's the point.
@@ -212,6 +213,16 @@
       url: https://doi.org/10.1093/jhered/esaf034
       link_text: Journal of Heredity
 
+    - title: Guppy
+      species: Poecilia reticulata
+      silhouette: guppy.svg
+      silhouette_of: Poecilia reticulata
+      silhouette_credit: unknown artist
+      silhouette_url: https://www.phylopic.org/images/61dfa771-73fc-453b-8fd3-499446144640
+      paper: "Improved reference genome uncovers novel sex-linked regions in the guppy (Poecilia reticulata)"
+      url: https://academic.oup.com/gbe/article/12/10/1789/5898193
+      link_text: Genome Biology and Evolution
+
 - id: methods
   title: Methods and training
   systems:
@@ -225,7 +236,11 @@
       blurb: >-
         A multivariate genome scan for detecting parallel evolution from allele-frequency
         change vectors, with Jim Whiting.
-      url: https://github.com/JimWhiting91/afvaper
+      links:
+        - text: Methods in Ecology and Evolution
+          url: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13952
+        - text: GitHub
+          url: https://github.com/JimWhiting91/afvaper
 
     - title: The power of trios
       blurb: >-
@@ -237,7 +252,11 @@
       blurb: >-
         GenotypePlot for visualising genotypes across a genomic region, and gatk-snp-calling
         for running GATK as PBS/SLURM arrays.
-      url: https://github.com/josieparis
+      links:
+        - text: GenotypePlot
+          url: https://github.com/josieparis/genotype_plot
+        - text: gatk-snp-calling
+          url: https://github.com/josieparis/gatk-snp-calling
 
     - title: Workshop on Genomics
       blurb: >-

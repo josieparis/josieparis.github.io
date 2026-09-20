@@ -321,6 +321,9 @@ main { min-height: 60vh; padding-bottom: 5rem; }
 .theme__credit { margin: 1rem 0 0; font-size: .8rem; color: var(--ink-3); }
 .theme__credit a { color: inherit; }
 .system__more { margin: .7rem 0 0; font-size: .85rem; font-weight: 500; color: var(--accent-ink); }
+.system__more--multi { display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
+.system__more--multi a { color: var(--accent-ink); text-decoration: none; }
+.system__more--multi a:hover { text-decoration: underline; }
 .pill--current {
   font-size: .66rem; padding: .12rem .5rem;
   color: var(--accent-ink); background: var(--accent-soft);

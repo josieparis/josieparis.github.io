@@ -135,7 +135,7 @@ permalink: /cv/
   <h2>Software &amp; resources</h2>
   <ul class="bullets">
     {%- for s in site.data.cv.software -%}
-    <li>{% if s.url %}<a href="{{ s.url }}" rel="noopener" target="_blank"><b>{{ s.name }}</b></a>{% else %}<b>{{ s.name }}</b>{% endif %} — {{ s.desc }}</li>
+    <li>{% if s.url %}<a href="{{ s.url }}" rel="noopener" target="_blank"><b>{{ s.name }}</b></a>{% else %}<b>{{ s.name }}</b>{% endif %} — {{ s.desc }}{% if s.paper_url %} (<a href="{{ s.paper_url }}" rel="noopener" target="_blank">paper</a>){% endif %}</li>
     {%- endfor -%}
   </ul>
 </section>

@@ -194,6 +194,7 @@ software:
   - name: AF-vapeR
     desc: software for identifying signatures of parallel allele frequency change
     url: https://github.com/JimWhiting91/afvaper
+    paper_url: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13952
 
 teaching:
   - when: "2026"
