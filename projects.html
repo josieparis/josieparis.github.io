@@ -55,7 +55,9 @@ permalink: /projects/
 
   {%- assign credited = theme.systems | where_exp: "s", "s.silhouette" -%}
   {%- if credited.size > 0 -%}
-  <p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a></p>
+  <p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
+    {%- assign licensed = credited | where_exp: "s", "s.silhouette_license" -%}
+    {%- for s in licensed %}; {{ s.title | downcase }} by <a href="{{ s.silhouette_url }}" rel="noopener" target="_blank">{{ s.silhouette_credit }}</a> (<a href="{{ s.silhouette_license_url }}" rel="license noopener" target="_blank">{{ s.silhouette_license }}</a>){% endfor %}</p>
   {%- endif -%}
 </section>
 {%- endfor -%}

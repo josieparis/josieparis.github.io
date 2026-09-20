@@ -12,7 +12,9 @@
 #     paper:   a paper title; shown as the card's hover tooltip (optional)
 #     silhouette / silhouette_of / silhouette_credit / silhouette_url:
 #              a PhyloPic SVG in assets/img/phylopic/, the taxon it depicts, the
-#              artist, and the PhyloPic page — rendered as an icon + a credit line
+#              artist, and the PhyloPic page — rendered as an icon + a credit line.
+#     silhouette_license / silhouette_license_url: set these only when the image is
+#              NOT public domain (e.g. CC BY); the credit line then names the artist.
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
 #     url:     external link instead of `link` (optional)
 #     link_text: label for the link line; defaults to the URL's host (optional)
@@ -217,8 +219,10 @@
       species: Poecilia reticulata
       silhouette: guppy.svg
       silhouette_of: Poecilia reticulata
-      silhouette_credit: unknown artist
-      silhouette_url: https://www.phylopic.org/images/61dfa771-73fc-453b-8fd3-499446144640
+      silhouette_credit: Josefine Bohr Brask
+      silhouette_url: https://www.phylopic.org/images/91a45685-b669-48ee-8c31-1be12a0f511a
+      silhouette_license: CC BY-NC-SA 3.0
+      silhouette_license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
       paper: "Improved reference genome uncovers novel sex-linked regions in the guppy (Poecilia reticulata)"
       url: https://academic.oup.com/gbe/article/12/10/1789/5898193
       link_text: Genome Biology and Evolution
