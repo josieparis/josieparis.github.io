@@ -55,11 +55,7 @@ permalink: /projects/
 
   {%- assign credited = theme.systems | where_exp: "s", "s.silhouette" -%}
   {%- if credited.size > 0 -%}
-  <p class="theme__credit">
-    Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a>
-    {%- assign artists = credited | map: "silhouette_credit" | uniq | sort -%}
-    {%- for a in artists %}{% if forloop.first %} by {% elsif forloop.last %} and {% else %}, {% endif %}{{ a }}{% endfor %} (public domain).
-  </p>
+  <p class="theme__credit">Silhouettes from <a href="https://www.phylopic.org" rel="noopener" target="_blank">PhyloPic</a></p>
   {%- endif -%}
 </section>
 {%- endfor -%}
