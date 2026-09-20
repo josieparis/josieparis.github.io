@@ -1,0 +1,224 @@
+# ---------------------------------------------------------------------------
+# The Projects page: research themes, each with the study systems inside it.
+#
+#   id:        anchor for the jump-links (letters, digits, hyphens)
+#   title:     section heading
+#   intro:     one or two sentences framing the question
+#   image:     a file in assets/img/ shown beside the intro (optional)
+#   systems:   the cards. Each has:
+#     title:   card heading
+#     species: Latin name(s), rendered in italics (optional)
+#     blurb:   one to three sentences
+#     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
+#     url:     external link instead of `link` (optional)
+#     current: true to show a "Current" pill (optional)
+#
+# A species can appear under more than one theme — that's the point.
+# ---------------------------------------------------------------------------
+
+- id: adaptation
+  title: Rapid adaptation in changing environments
+  intro: >-
+    How do wild populations adapt — quickly, repeatedly, and sometimes against the odds?
+    I use whole-genome, pool-seq and RAD-seq data to find the genomic signatures of
+    selection in populations facing pollution, predators, cities and a warming climate.
+  image: guppy.jpg
+  image_alt: A male Trinidadian guppy
+  systems:
+    - title: Trinidadian guppies
+      species: Poecilia reticulata
+      blurb: >-
+        Balancing selection on male colour polymorphism, a large autosomal haplotype behind
+        sex-linked colour, and convergent evolution across natural and experimentally
+        translocated populations.
+      link: /projects/guppies/
+
+    - title: Brown trout and toxic metals
+      species: Salmo trutta
+      blurb: >-
+        Local adaptation to the legacy of Britain's mining history — the genomic signature
+        and transcriptional response of metal tolerance, from my PhD through to ongoing work
+        on parallel adaptation to minewater pollution.
+
+    - title: King penguins and climate
+      species: Aptenodytes patagonicus
+      blurb: >-
+        Poly2Adapt — temporal genomics across two decades of Subantarctic warming, to detect
+        polygenic selection on reproductive fitness in a long-lived wild vertebrate.
+      link: /projects/king-penguins/
+      current: true
+
+    - title: Italian house sparrows in cities
+      species: Passer italiae
+      blurb: >-
+        URBANAPT — convergent adaptation to urban environments, with Carlo Polidori at the
+        University of Milan.
+      current: true
+
+    - title: Bumblebees
+      species: Bombus terrestris
+      blurb: >-
+        Selection despite low genetic diversity and high gene flow in the rapid island invasion
+        of Tasmania, and genomic divergence between commercial and wild bees in Sweden.
+
+- id: conservation
+  title: Conservation and wildlife-disease genomics
+  intro: >-
+    Genomic data can tell managers which populations are distinct, which are inbred or
+    hybridising, and which carry the variation to persist. This is the applied end of my work,
+    from Europe's most endangered reptile to disease transmission in North American deer.
+  image: podarcis-raffonei.jpg
+  image_alt: An Aeolian wall lizard
+  systems:
+    - title: Mule deer and chronic wasting disease
+      species: Odocoileus hemionus
+      blurb: >-
+        Population and landscape genomics of CWD transmission, with Chris Funk at Colorado
+        State University — plus a critical reanalysis of genomic prediction for CWD in
+        white-tailed deer.
+      current: true
+
+    - title: Aeolian wall lizard
+      species: Podarcis raffonei
+      blurb: >-
+        Genetic monitoring of Europe's most endangered reptile: does hybridisation with the
+        invasive Italian wall lizard threaten the population on Vulcano?
+      link: /projects/podarcis-lizards/
+
+    - title: Rosy finches
+      species: Leucosticte
+      blurb: >-
+        Demographic modelling of Black, Brown-capped and Gray-crowned rosy finches, and the
+        loss of adaptive capacity that drives climate vulnerability in this alpine specialist
+        complex, with Kristen Ruegg.
+      current: true
+
+    - title: Chalk-stream Atlantic salmon
+      species: Salmo salar
+      blurb: >-
+        The salmon of southern England's chalk streams are genetically unique — the case for
+        recognising them as a distinct management unit.
+
+    - title: European lobster
+      species: Homarus gammarus
+      blurb: >-
+        Genetic divergence and adaptation of an isolated population in the Netherlands, and
+        genomic tools for aquaculture and restocking (BBSRC AquaLeap).
+
+    - title: Nassau grouper
+      species: Epinephelus striatus
+      blurb: >-
+        RAD-seq and in situ monitoring of spawning aggregations in The Bahamas reveal
+        fine-scale population structure and the origins of aggregating fish.
+
+- id: genomes
+  title: Genomes as resources
+  intro: >-
+    A good reference genome is the foundation everything else is built on. I assemble and
+    annotate chromosome-level genomes for non-model species, often with the Vertebrate Genomes
+    Project and ERGA, and build the resources — expression atlases, annotations, teaching
+    datasets — that let other people use them.
+  image: king-penguins.jpg
+  image_alt: A King penguin colony
+  systems:
+    - title: King penguin
+      species: Aptenodytes patagonicus
+      blurb: A chromosome-level genome for an emerging model in the wild for studying evolution.
+      link: /projects/king-penguins/
+
+    - title: European lobster
+      species: Homarus gammarus
+      blurb: A high-quality reference genome and tissue expression atlas (LobsterGeneX).
+
+    - title: European leaf-toed gecko
+      species: Euleptes europaea
+      blurb: Chromosome-level assembly of a Mediterranean island endemic.
+
+    - title: Tyrrhenian tree frog
+      species: Hyla sarda
+      blurb: Chromosome-level genome assembly.
+
+    - title: Black-legged kittiwake
+      species: Rissa tridactyla
+      blurb: A chromosome-level reference for a declining circumpolar seabird.
+
+    - title: Pink sea fan
+      species: Eunicella verrucosa
+      blurb: The first genome of a cold-water octocoral.
+
+    - title: Eurasian woodcock
+      species: Scolopax rusticola
+      blurb: ERGA-BGE reference genome for a game bird with isolated populations of conservation interest.
+
+    - title: White perch
+      species: Morone americana
+      blurb: Two genomes of an ecologically important teleost.
+
+- id: demography
+  title: Demography, biogeography and speciation
+  intro: >-
+    Where did populations come from, how connected are they, and when does divergence become
+    speciation? Islands and seabirds are my favourite places to ask.
+  image: podarcis-siculus.jpg
+  image_alt: An Italian wall lizard
+  systems:
+    - title: Mediterranean wall lizards
+      species: Podarcis siculus and relatives
+      blurb: >-
+        Reconstructing the complex colonisation histories of lizards across Mediterranean
+        archipelagos — and showing that genetic depletion doesn't prevent rapid evolution in
+        island-introduced lizards.
+      link: /projects/podarcis-lizards/
+
+    - title: Shearwaters and other pelagic seabirds
+      blurb: >-
+        Species delimitation with genomic data across a speciation continuum, and how
+        pervasive, recurrent hybridisation prevents inbreeding depression in Europe's most
+        threatened seabird.
+
+    - title: A seabird contact zone
+      blurb: >-
+        When hybrids take an intermediate route — genetic ancestry shapes migration across the
+        contact zone of two closely related seabirds.
+
+    - title: Emperor penguins
+      species: Aptenodytes forsteri
+      blurb: >-
+        Demographic history and selective sweeps from whole genomes of Emperor, King and
+        outgroup penguins, and the gene-expression shifts underlying life in the extreme
+        Antarctic.
+
+- id: methods
+  title: Methods and training
+  intro: >-
+    Tools and teaching that make genomics usable by more people.
+  systems:
+    - title: A road map for Stacks
+      blurb: >-
+        “Lost in parameter space” — how to choose de novo RAD-seq assembly parameters, and one
+        of Methods in Ecology and Evolution's most-read papers.
+      url: https://doi.org/10.1111/2041-210X.12775
+
+    - title: AF-vapeR
+      blurb: >-
+        A multivariate genome scan for detecting parallel evolution from allele-frequency
+        change vectors, with Jim Whiting.
+      url: https://github.com/JimWhiting91/afvaper
+
+    - title: The power of trios
+      blurb: >-
+        Using parent–offspring trios to infer population-genetic parameters — mutation and
+        recombination rates — in non-model species.
+      current: true
+
+    - title: Small reusable tools
+      blurb: >-
+        GenotypePlot for visualising genotypes across a genomic region, and gatk-snp-calling
+        for running GATK as PBS/SLURM arrays.
+      url: https://github.com/josieparis
+
+    - title: Workshop on Genomics
+      blurb: >-
+        Director of the two-week international workshop in Český Krumlov (2023–2026), and
+        author of the Genomics Adventure teaching materials.
+      url: https://evomics.org/2026-workshop-on-genomics/

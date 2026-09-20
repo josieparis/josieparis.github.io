@@ -12,8 +12,8 @@ _data/
   publications.yml       every paper — the single source of truth
   cv.yml                 employment, education, secondments, professional roles,
                          software, teaching, supervision, organisation, talks, awards
-  more_projects.yml      projects listed on /projects/ without their own page
-_projects/               one Markdown file per project write-up
+  themes.yml             the Projects page: research themes and the systems in each
+_projects/               one Markdown file per project write-up (linked from themes.yml)
   king-penguins.md
   guppies.md
   podarcis-lizards.md
@@ -53,15 +53,21 @@ The `pipeline` and `in_review` lists have no `year`.
 `king-penguins`, `guppies`, `podarcis-lizards` — they match the filenames in `_projects/`.
 Nothing is duplicated; project pages filter the master list.
 
-**Add a project.** Drop a new `.md` file into `_projects/`. Front matter:
+**Edit the Projects page.** `_data/themes.yml` — one entry per research theme, each with
+an intro, an optional image, and the list of study systems shown as cards. A system with
+`link: /projects/<slug>/` becomes a clickable card pointing at a write-up; `url:` does the same
+for an external link; `current: true` adds a "Current" pill. The same species can sit under
+more than one theme.
+
+**Add a project write-up.** Drop a new `.md` file into `_projects/`, then point a card at it
+from `themes.yml`. Front matter:
 
 ```yaml
 ---
-title: Short name            # used on the /projects/ card and browser tab
+title: Short name            # browser tab / card title
 headline: Longer project title   # the <h1> on the page itself
 species: Genus species
 slug: my-project             # must match the filename
-order: 4                     # position on the projects page
 image: my-photo.jpg          # a file in assets/img/
 context: One line on funding and collaborators.
 funders:

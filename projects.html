@@ -2,33 +2,46 @@
 layout: page
 title: Projects
 permalink: /projects/
-lede: Take a look at some of my past and ongoing projects.
+lede: My past and ongoing work, grouped by the questions rather than the species.
 ---
 
-<ul class="project-grid">
-  {%- assign projects = site.projects | sort: "order" -%}
-  {%- for project in projects -%}
-  <li>
-    <a class="project-card" href="{{ project.url | relative_url }}">
-      {%- if project.image -%}
-      <div class="project-card__media">
-        <img src="{{ project.image | prepend: '/assets/img/' | relative_url }}"
-             alt="{{ project.image_alt | default: project.title }}" loading="lazy">
-      </div>
-      {%- endif -%}
-      <div class="project-card__body">
-        <h2 class="project-card__title">{{ project.title }}</h2>
-        {%- if project.species %}<p class="project-card__species">{{ project.species }}</p>{% endif -%}
-      </div>
-    </a>
-  </li>
+<nav class="theme-nav" aria-label="Themes">
+  {%- for theme in site.data.themes -%}
+  <a class="theme-nav__link" href="#{{ theme.id }}">{{ theme.title }}</a>
   {%- endfor -%}
-</ul>
+</nav>
 
-<h2>Also in the mix</h2>
-<p class="pub-section__note">Work I've been part of that doesn't have a write-up here yet.</p>
-<ul class="project-more">
-  {%- for p in site.data.more_projects -%}
-  <li><b>{{ p.title }}</b>{% if p.note %} — {{ p.note }}{% endif %}</li>
-  {%- endfor -%}
-</ul>
+{%- for theme in site.data.themes -%}
+<section class="theme" id="{{ theme.id }}">
+  <div class="theme__head{% unless theme.image %} theme__head--noimage{% endunless %}">
+    <div class="theme__text">
+      <h2 class="theme__title">{{ theme.title }}</h2>
+      {%- if theme.intro %}<p class="theme__intro">{{ theme.intro }}</p>{% endif -%}
+    </div>
+    {%- if theme.image -%}
+    <img class="theme__image"
+         src="{{ theme.image | prepend: '/assets/img/' | relative_url }}"
+         alt="{{ theme.image_alt | default: theme.title }}" loading="lazy">
+    {%- endif -%}
+  </div>
+
+  <ul class="systems">
+    {%- for s in theme.systems -%}
+    {%- assign href = nil -%}
+    {%- if s.link %}{% assign href = s.link | relative_url %}{% elsif s.url %}{% assign href = s.url %}{% endif -%}
+    <li>
+      {%- if href -%}
+      <a class="system system--link" href="{{ href }}"{% if s.url %} rel="noopener" target="_blank"{% endif %}>
+      {%- else -%}
+      <div class="system">
+      {%- endif -%}
+        <h3 class="system__title">{{ s.title }}{% if s.current %} <span class="pill pill--current">Current</span>{% endif %}</h3>
+        {%- if s.species %}<p class="system__species">{{ s.species }}</p>{% endif -%}
+        <p class="system__blurb">{{ s.blurb }}</p>
+        {%- if s.link %}<p class="system__more">Read more →</p>{% elsif s.url %}<p class="system__more">{{ s.url | remove: 'https://' | split: '/' | first }} ↗</p>{% endif -%}
+      {%- if href -%}</a>{%- else -%}</div>{%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endfor -%}
