@@ -40,7 +40,7 @@ permalink: /projects/
         {%- if s.species %}<p class="system__species">{{ s.species }}</p>{% endif -%}
         {%- if s.silhouette -%}
         <div class="system__sil" role="img" aria-label="Silhouette of {{ s.silhouette_of | default: s.title }}"
-             style="--sil: url('{{ s.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}')"></div>
+             style="--sil: url('{{ s.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}'){% if s.silhouette_scale %}; --sil-scale: {{ s.silhouette_scale }}{% endif %}"></div>
         {%- endif -%}
         {%- if s.blurb %}<p class="system__blurb">{{ s.blurb }}</p>{% endif -%}
         {%- if s.papers -%}

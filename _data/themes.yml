@@ -14,6 +14,7 @@
 #     silhouette / silhouette_of / silhouette_credit / silhouette_url:
 #              a PhyloPic SVG in assets/img/phylopic/, the taxon it depicts, the
 #              artist, and the PhyloPic page — rendered as an icon + a credit line.
+#     silhouette_scale: shrink a wide shape (fish!) relative to the others, e.g. 0.7 (optional)
 #     silhouette_license / silhouette_license_url: set these only when the image is
 #              NOT public domain (e.g. CC BY); the credit line then names the artist.
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
@@ -35,6 +36,7 @@
     - title: Trinidadian guppy colour and adaptation to high- and low-predation environments
       species: Poecilia reticulata
       silhouette: guppy.svg
+      silhouette_scale: 0.7
       silhouette_of: Poecilia reticulata
       silhouette_credit: Josefine Bohr Brask
       silhouette_url: https://www.phylopic.org/images/91a45685-b669-48ee-8c31-1be12a0f511a
@@ -50,6 +52,7 @@
     - title: Brown trout and toxic metals
       species: Salmo trutta
       silhouette: brown-trout.svg
+      silhouette_scale: 0.7
       silhouette_of: Salmo trutta
       silhouette_credit: Carlos Cano-Barbacil
       silhouette_url: https://www.phylopic.org/images/23a7d09d-4a4d-4ad5-ad07-49a6b59a7fba
@@ -124,6 +127,7 @@
     - title: Chalk-stream Atlantic salmon
       species: Salmo salar
       silhouette: salmon.svg
+      silhouette_scale: 0.7
       silhouette_of: Salmo salar
       silhouette_credit: unknown artist
       silhouette_url: https://www.phylopic.org/images/f6c6590d-8aa1-4d08-a25f-e6c90727c071
@@ -142,6 +146,7 @@
     - title: Nassau grouper
       species: Epinephelus striatus
       silhouette: grouper.svg
+      silhouette_scale: 0.7
       silhouette_of: Epinephelus
       silhouette_credit: unknown artist
       silhouette_url: https://www.phylopic.org/images/86c40d81-2613-4bb4-ad57-fb460be56ae5
@@ -258,6 +263,7 @@
     - title: White perch
       species: Morone americana
       silhouette: white-perch.svg
+      silhouette_scale: 0.7
       silhouette_of: Morone chrysops
       silhouette_credit: unknown artist
       silhouette_url: https://www.phylopic.org/images/bae30310-1dbd-4057-b673-abc8ebd9f7a9
@@ -268,6 +274,7 @@
     - title: Guppy
       species: Poecilia reticulata
       silhouette: guppy.svg
+      silhouette_scale: 0.7
       silhouette_of: Poecilia reticulata
       silhouette_credit: Josefine Bohr Brask
       silhouette_url: https://www.phylopic.org/images/91a45685-b669-48ee-8c31-1be12a0f511a
