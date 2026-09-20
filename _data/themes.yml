@@ -19,6 +19,8 @@
 #     url:     external link instead of `link` (optional)
 #     link_text: label for the link line; defaults to the URL's host (optional)
 #     links:   several links instead of one: a list of {text, url} (optional)
+#     papers:  list of DOI/preprint URLs exactly as written in publications.yml;
+#              each is looked up there and rendered as title + journal + year (optional)
 #     current: true to show a "Current" pill (optional)
 #
 # A species can appear under more than one theme — that's the point.
@@ -29,37 +31,62 @@
   systems:
     - title: Trinidadian guppies
       species: Poecilia reticulata
-      blurb: >-
-        Balancing selection on male colour polymorphism, a large autosomal haplotype behind
-        sex-linked colour, and convergent evolution across natural and experimentally
-        translocated populations.
+      silhouette: guppy.svg
+      silhouette_of: Poecilia reticulata
+      silhouette_credit: Josefine Bohr Brask
+      silhouette_url: https://www.phylopic.org/images/91a45685-b669-48ee-8c31-1be12a0f511a
+      silhouette_license: CC BY-NC-SA 3.0
+      silhouette_license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+      papers:
+        - https://doi.org/10.1098/rstb.2025.0174
+        - https://doi.org/10.1038/s41467-022-28895-4
+        - https://doi.org/10.1038/s41437-022-00512-6
+        - https://doi.org/10.1002/evl3.272
+        - https://doi.org/10.1371/journal.pgen.1009566
 
     - title: Brown trout and toxic metals
       species: Salmo trutta
-      blurb: >-
-        Local adaptation to the legacy of Britain's mining history — the genomic signature
-        and transcriptional response of metal tolerance, from my PhD through to ongoing work
-        on parallel adaptation to minewater pollution.
+      silhouette: brown-trout.svg
+      silhouette_of: Salmo trutta
+      silhouette_credit: Carlos Cano-Barbacil
+      silhouette_url: https://www.phylopic.org/images/23a7d09d-4a4d-4ad5-ad07-49a6b59a7fba
+      papers:
+        - https://doi.org/10.64898/2026.06.09.731039
+        - https://doi.org/10.1111/mec.17591
+        - https://doi.org/10.1038/s41598-019-48303-0
+        - https://doi.org/10.1111/eva.12266
 
     - title: King penguins and climate
       species: Aptenodytes patagonicus
-      blurb: >-
-        Poly2Adapt — temporal genomics across two decades of Subantarctic warming, to detect
-        polygenic selection on reproductive fitness in a long-lived wild vertebrate.
+      silhouette: king-penguin.svg
+      silhouette_of: Aptenodytes patagonicus
+      silhouette_credit: Steven Traver
+      silhouette_url: https://www.phylopic.org/images/21c50828-58d8-42df-9219-2c1b0fb57c99
       current: true
+      papers:
+        - https://doi.org/10.1101/2025.07.10.663151
+        - https://doi.org/10.1093/molbev/msaf146
 
     - title: Italian house sparrows in cities
       species: Passer italiae
+      silhouette: sparrow.svg
+      silhouette_of: Passer domesticus
+      silhouette_credit: Andy Wilson
+      silhouette_url: https://www.phylopic.org/images/3a4cdd72-e553-40ad-838e-3b23037b2010
+      current: true
       blurb: >-
         URBANAPT — convergent adaptation to urban environments, with Carlo Polidori at the
         University of Milan.
-      current: true
 
     - title: Bumblebees
       species: Bombus terrestris
-      blurb: >-
-        Selection despite low genetic diversity and high gene flow in the rapid island invasion
-        of Tasmania, and genomic divergence between commercial and wild bees in Sweden.
+      silhouette: bumblebee.svg
+      silhouette_of: Bombus terrestris
+      silhouette_credit: Ferran Sayol
+      silhouette_url: https://www.phylopic.org/images/2bd1e8b6-d616-4c50-a352-7a6e61271c61
+      papers:
+        - https://doi.org/10.1111/mec.17212
+        - https://doi.org/10.1111/eva.13346
 
 - id: conservation
   title: Conservation and wildlife genomics

@@ -54,8 +54,11 @@ Nothing is duplicated; project pages filter the master list.
 **Edit the Projects page.** `_data/themes.yml` — one entry per research theme, each with
 an intro, an optional image, and the list of study systems shown as cards. A system with
 `link: /projects/<slug>/` becomes a clickable card pointing at a write-up; `url:` does the same
-for an external link; `current: true` adds a "Current" pill. The same species can sit under
-more than one theme.
+for an external link; `current: true` adds a "Current" pill; `papers:` is a list of DOI or preprint URLs copied
+exactly from `publications.yml` — each is looked up there and shown as title + journal + year,
+so a paper's details live in one place. `silhouette:` names an SVG in `assets/img/phylopic/`
+(from phylopic.org; set `silhouette_license` when one isn't public domain so it gets credited).
+The same species can sit under more than one theme.
 
 **Add a project write-up.** Drop a new `.md` file into `_projects/`, then point a card at it
 from `themes.yml`. Front matter:
