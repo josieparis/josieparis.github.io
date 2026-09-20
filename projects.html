@@ -2,7 +2,6 @@
 layout: page
 title: Projects
 permalink: /projects/
-lede: My past and ongoing work, grouped by the questions rather than the species.
 ---
 
 <nav class="theme-nav" aria-label="Themes">
@@ -37,8 +36,10 @@ lede: My past and ongoing work, grouped by the questions rather than the species
       {%- endif -%}
         <h3 class="system__title">{{ s.title }}{% if s.current %} <span class="pill pill--current">Current</span>{% endif %}</h3>
         {%- if s.species %}<p class="system__species">{{ s.species }}</p>{% endif -%}
-        <p class="system__blurb">{{ s.blurb }}</p>
-        {%- if s.link %}<p class="system__more">Read more →</p>{% elsif s.url %}<p class="system__more">{{ s.url | remove: 'https://' | split: '/' | first }} ↗</p>{% endif -%}
+        {%- if s.paper %}<p class="system__paper">{{ s.paper }}</p>{% endif -%}
+        {%- if s.blurb %}<p class="system__blurb">{{ s.blurb }}</p>{% endif -%}
+        {%- if s.link %}<p class="system__more">{{ s.link_text | default: "Read more" }} →</p>
+        {%- elsif s.url %}<p class="system__more">{{ s.link_text | default: s.url | remove: 'https://' | split: '/' | first }} ↗</p>{% endif -%}
       {%- if href -%}</a>{%- else -%}</div>{%- endif -%}
     </li>
     {%- endfor -%}

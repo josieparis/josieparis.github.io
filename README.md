@@ -13,10 +13,8 @@ _data/
   cv.yml                 employment, education, secondments, professional roles,
                          software, teaching, supervision, organisation, talks, awards
   themes.yml             the Projects page: research themes and the systems in each
-_projects/               one Markdown file per project write-up (linked from themes.yml)
-  king-penguins.md
-  guppies.md
-  podarcis-lizards.md
+_projects/               one Markdown file per project write-up (linked from themes.yml);
+                         empty at the moment — the old Wix write-ups are in git history
 index.html               home page
 projects.html            /projects/
 publications.html        /publications/

@@ -3,25 +3,23 @@
 #
 #   id:        anchor for the jump-links (letters, digits, hyphens)
 #   title:     section heading
-#   intro:     one or two sentences framing the question
+#   intro:     optional one or two sentences under the heading (currently unused)
 #   image:     a file in assets/img/ shown beside the intro (optional)
 #   systems:   the cards. Each has:
 #     title:   card heading
 #     species: Latin name(s), rendered in italics (optional)
-#     blurb:   one to three sentences
+#     blurb:   one to three sentences (optional)
+#     paper:   a paper title, shown in place of / above the blurb (optional)
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
 #     url:     external link instead of `link` (optional)
+#     link_text: label for the link line; defaults to the URL's host (optional)
 #     current: true to show a "Current" pill (optional)
 #
 # A species can appear under more than one theme — that's the point.
 # ---------------------------------------------------------------------------
 
 - id: adaptation
-  title: Rapid adaptation in changing environments
-  intro: >-
-    How do wild populations adapt — quickly, repeatedly, and sometimes against the odds?
-    I use whole-genome, pool-seq and RAD-seq data to find the genomic signatures of
-    selection in populations facing pollution, predators, cities and a warming climate.
+  title: Rapid adaptation to changing environments
   image: guppy.jpg
   image_alt: A male Trinidadian guppy
   systems:
@@ -31,7 +29,6 @@
         Balancing selection on male colour polymorphism, a large autosomal haplotype behind
         sex-linked colour, and convergent evolution across natural and experimentally
         translocated populations.
-      link: /projects/guppies/
 
     - title: Brown trout and toxic metals
       species: Salmo trutta
@@ -45,7 +42,6 @@
       blurb: >-
         Poly2Adapt — temporal genomics across two decades of Subantarctic warming, to detect
         polygenic selection on reproductive fitness in a long-lived wild vertebrate.
-      link: /projects/king-penguins/
       current: true
 
     - title: Italian house sparrows in cities
@@ -62,11 +58,7 @@
         of Tasmania, and genomic divergence between commercial and wild bees in Sweden.
 
 - id: conservation
-  title: Conservation and wildlife-disease genomics
-  intro: >-
-    Genomic data can tell managers which populations are distinct, which are inbred or
-    hybridising, and which carry the variation to persist. This is the applied end of my work,
-    from Europe's most endangered reptile to disease transmission in North American deer.
+  title: Conservation and wildlife genomics
   image: podarcis-raffonei.jpg
   image_alt: An Aeolian wall lizard
   systems:
@@ -83,7 +75,6 @@
       blurb: >-
         Genetic monitoring of Europe's most endangered reptile: does hybridisation with the
         invasive Italian wall lizard threaten the population on Vulcano?
-      link: /projects/podarcis-lizards/
 
     - title: Rosy finches
       species: Leucosticte
@@ -111,54 +102,8 @@
         RAD-seq and in situ monitoring of spawning aggregations in The Bahamas reveal
         fine-scale population structure and the origins of aggregating fish.
 
-- id: genomes
-  title: Genomes as resources
-  intro: >-
-    A good reference genome is the foundation everything else is built on. I assemble and
-    annotate chromosome-level genomes for non-model species, often with the Vertebrate Genomes
-    Project and ERGA, and build the resources — expression atlases, annotations, teaching
-    datasets — that let other people use them.
-  image: king-penguins.jpg
-  image_alt: A King penguin colony
-  systems:
-    - title: King penguin
-      species: Aptenodytes patagonicus
-      blurb: A chromosome-level genome for an emerging model in the wild for studying evolution.
-      link: /projects/king-penguins/
-
-    - title: European lobster
-      species: Homarus gammarus
-      blurb: A high-quality reference genome and tissue expression atlas (LobsterGeneX).
-
-    - title: European leaf-toed gecko
-      species: Euleptes europaea
-      blurb: Chromosome-level assembly of a Mediterranean island endemic.
-
-    - title: Tyrrhenian tree frog
-      species: Hyla sarda
-      blurb: Chromosome-level genome assembly.
-
-    - title: Black-legged kittiwake
-      species: Rissa tridactyla
-      blurb: A chromosome-level reference for a declining circumpolar seabird.
-
-    - title: Pink sea fan
-      species: Eunicella verrucosa
-      blurb: The first genome of a cold-water octocoral.
-
-    - title: Eurasian woodcock
-      species: Scolopax rusticola
-      blurb: ERGA-BGE reference genome for a game bird with isolated populations of conservation interest.
-
-    - title: White perch
-      species: Morone americana
-      blurb: Two genomes of an ecologically important teleost.
-
 - id: demography
   title: Demography, biogeography and speciation
-  intro: >-
-    Where did populations come from, how connected are they, and when does divergence become
-    speciation? Islands and seabirds are my favourite places to ask.
   image: podarcis-siculus.jpg
   image_alt: An Italian wall lizard
   systems:
@@ -168,7 +113,6 @@
         Reconstructing the complex colonisation histories of lizards across Mediterranean
         archipelagos — and showing that genetic depletion doesn't prevent rapid evolution in
         island-introduced lizards.
-      link: /projects/podarcis-lizards/
 
     - title: Shearwaters and other pelagic seabirds
       blurb: >-
@@ -188,10 +132,61 @@
         outgroup penguins, and the gene-expression shifts underlying life in the extreme
         Antarctic.
 
+- id: genomes
+  title: Reference genome assemblies
+  image: king-penguins.jpg
+  image_alt: A King penguin colony
+  systems:
+    - title: King penguin
+      species: Aptenodytes patagonicus
+      paper: "A chromosome-level genome of the King penguin (Aptenodytes patagonicus): an emerging model in the wild for studying evolution"
+      url: https://doi.org/10.1101/2025.03.13.642884
+      link_text: Preprint on bioRxiv
+
+    - title: European lobster
+      species: Homarus gammarus
+      paper: "A high-quality reference genome and tissue expression atlas for the European lobster (Homarus gammarus)"
+      url: https://doi.org/10.1093/gbe/evag138
+      link_text: Genome Biology and Evolution
+
+    - title: European leaf-toed gecko
+      species: Euleptes europaea
+      paper: "Chromosome-level genome assembly of the European leaf-toed gecko, Euleptes europaea"
+      url: https://doi.org/10.64898/2026.08.10.744031
+      link_text: Preprint on bioRxiv
+
+    - title: Tyrrhenian tree frog
+      species: Hyla sarda
+      paper: "Chromosome-level genome assembly of the Tyrrhenian tree frog, Hyla sarda"
+      url: https://doi.org/10.1038/s41597-025-05760-9
+      link_text: Scientific Data
+
+    - title: Black-legged kittiwake
+      species: Rissa tridactyla
+      paper: "A chromosome-level reference genome for the black-legged kittiwake (Rissa tridactyla), a declining circumpolar seabird"
+      url: https://doi.org/10.1093/gbe/evad153
+      link_text: Genome Biology and Evolution
+
+    - title: Pink sea fan
+      species: Eunicella verrucosa
+      paper: "The first genome of the cold-water octocoral, the pink sea fan, Eunicella verrucosa"
+      url: https://doi.org/10.1093/gbe/evad083
+      link_text: Genome Biology and Evolution
+
+    - title: Eurasian woodcock
+      species: Scolopax rusticola
+      paper: "ERGA-BGE reference genome of the Eurasian Woodcock (Scolopax rusticola), a game bird species with isolated populations of conservation interest"
+      url: https://doi.org/10.12688/openreseurope.23370.1
+      link_text: Open Research Europe
+
+    - title: White perch
+      species: Morone americana
+      paper: "Two genomes of the white perch (Morone americana), an ecologically important teleost"
+      url: https://doi.org/10.1093/jhered/esaf034
+      link_text: Journal of Heredity
+
 - id: methods
   title: Methods and training
-  intro: >-
-    Tools and teaching that make genomics usable by more people.
   systems:
     - title: A road map for Stacks
       blurb: >-
