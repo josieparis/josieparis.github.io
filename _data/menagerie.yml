@@ -3,7 +3,7 @@
 - { title: Brown trout,             silhouette: brown-trout.svg,    theme: adaptation,   scale: 0.85 }
 - { title: Trinidadian guppy,       silhouette: guppy.svg,          theme: adaptation,   scale: 0.85 }
 - { title: European lobster,        silhouette: lobster.svg,        theme: genomes }
-- { title: Bumblebee,               silhouette: bumblebee.svg,      theme: adaptation }
+- { title: Bumblebee,               silhouette: bumblebee.svg,      theme: adaptation,   scale: 0.7 }
 - { title: Mediterranean wall lizards, silhouette: aeolian-lizard.svg, theme: conservation }
 - { title: European leaf-toed gecko, silhouette: gecko.svg,         theme: genomes }
 - { title: King penguin,            silhouette: king-penguin.svg,   theme: adaptation }

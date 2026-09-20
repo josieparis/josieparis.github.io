@@ -87,6 +87,7 @@
     - title: Bumblebees
       species: Bombus terrestris
       silhouette: bumblebee.svg
+      silhouette_scale: 0.7
       silhouette_of: Bombus terrestris
       silhouette_credit: Ferran Sayol
       silhouette_url: https://www.phylopic.org/images/2bd1e8b6-d616-4c50-a352-7a6e61271c61
