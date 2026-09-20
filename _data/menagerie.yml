@@ -1,0 +1,14 @@
+# The strip of species silhouettes on the home page, in career order.
+# theme = the projects-page section the silhouette links to.
+- { title: Brown trout,             silhouette: brown-trout.svg,    theme: adaptation,   scale: 0.85 }
+- { title: Trinidadian guppy,       silhouette: guppy.svg,          theme: adaptation,   scale: 0.85 }
+- { title: European lobster,        silhouette: lobster.svg,        theme: genomes }
+- { title: Bumblebee,               silhouette: bumblebee.svg,      theme: adaptation }
+- { title: Mediterranean wall lizards, silhouette: aeolian-lizard.svg, theme: conservation }
+- { title: European leaf-toed gecko, silhouette: gecko.svg,         theme: genomes }
+- { title: King penguin,            silhouette: king-penguin.svg,   theme: adaptation }
+- { title: Emperor penguin,         silhouette: emperor-penguin.svg, theme: demography }
+- { title: Shearwaters,             silhouette: shearwater.svg,     theme: demography }
+- { title: Italian house sparrow,   silhouette: sparrow.svg,        theme: adaptation }
+- { title: Rosy finches,            silhouette: rosy-finch.svg,     theme: conservation }
+- { title: Mule deer,               silhouette: mule-deer.svg,      theme: conservation }

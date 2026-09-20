@@ -27,3 +27,18 @@ title: Home
     </div>
   </div>
 </section>
+
+{%- comment -%} The species I work on, as a strip of silhouettes; each links to its card on the projects page. {%- endcomment -%}
+<section class="wrap menagerie-wrap" aria-label="Study species">
+  <p class="menagerie__label">Species I have worked on</p>
+  <ul class="menagerie">
+    {%- for m in site.data.menagerie -%}
+    <li>
+      <a href="{{ '/projects/' | relative_url }}#{{ m.theme }}" title="{{ m.title }}">
+        <span class="menagerie__sil" style="--sil: url('{{ m.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}'){% if m.scale %}; --sil-scale: {{ m.scale }}{% endif %}"></span>
+        <span class="visually-hidden">{{ m.title }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
