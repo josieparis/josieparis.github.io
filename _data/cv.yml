@@ -181,6 +181,7 @@ professional:
 software:
   - name: LobsterGeneX
     desc: lobster gene expression atlas
+    url: https://lobstergenex.com
   - name: Genomics Adventure
     desc: teaching materials for training students in genomics
     url: https://github.com/josieparis/genomics_adventure
