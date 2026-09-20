@@ -16,10 +16,10 @@
 
 pipeline:
   - authors: "Paris JR, Abueg L, Pelan S, Tilley T, Balacco J, O'Toole B, Mountcastle J, Formenti G, Jarvis ED, Canestrelli D, Salvi D"
-    title: "Chromosome-level genome of assembly of the European leaf-toed gecko, Euleptes europea"
+    title: "Chromosome-level genome of assembly of the European leaf-toed gecko, Euleptes europaea"
 
 in_review:
-  - authors: "Paris JR, Jenkins TL, Ferrer Obiol J, Gundappa MK, Regan T, Campbell L, Maslen GL, Alvarez-Jarreta J, Dyer S, Jefferies A, Moore KA, Farbos A, Bickley L, Verbruggen B, Bateman K, Daniels C, Ellis CD, Ashton TJ, Tyler CR, Steniford G, Houston R, Bean T, van Aerle R, Macqueen D, Stevens JR, Santos EM"
+  - authors: "Paris JR, Jenkins TL, Ferrer Obiol J, Gundappa MK, Regan T, Campbell L, Maslen GL, Alvarez-Jarreta J, Dyer S, Jefferies A, Moore KA, Farbos A, Bickley L, Verbruggen B, Bateman K, Daniels C, Ellis CD, Ashton TJ, Tyler CR, Stentiford G, Houston R, Bean T, van Aerle R, Macqueen D, Stevens JR, Santos EM"
     title: "A high-quality reference genome and tissue expression atlas for the European lobster (Homarus gammarus)"
 
   - authors: "Garcia-Urdangarin B, Ferrer Obiol J, Paris JR, Sallent Á, Izquierdo-Arànega G, Ragonnet M, Afán I, Forero MG, Navarro J, García P, González-Solís J, Ramos R"
