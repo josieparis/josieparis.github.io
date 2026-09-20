@@ -75,13 +75,14 @@
         - https://doi.org/10.1101/2025.07.10.663151
         - https://doi.org/10.1093/molbev/msaf146
 
-    - title: Italian house sparrows in cities
+    - title: Italian house sparrow
       species: Passer italiae
       silhouette: sparrow.svg
       silhouette_of: Passer domesticus
       silhouette_credit: Andy Wilson
       silhouette_url: https://www.phylopic.org/images/3a4cdd72-e553-40ad-838e-3b23037b2010
       current: true
+      blurb: Paired urban–rural sites across Italy to explore parallel adaptation to urban environments.
 
     - title: Bumblebees
       species: Bombus terrestris
