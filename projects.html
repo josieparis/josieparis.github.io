@@ -38,6 +38,13 @@ permalink: /projects/
       {%- endif -%}
         <h3 class="system__title">{{ s.title }}{% if s.current %} <span class="pill pill--current">Current</span>{% endif %}</h3>
         {%- if s.species %}<p class="system__species">{{ s.species }}</p>{% endif -%}
+        {%- assign image_path = s.image | prepend: '/assets/img/' -%}
+        {%- assign image_file = site.static_files | where: "path", image_path | first -%}
+        {%- if s.image and image_file -%}
+        <div class="system__figure{% if s.image_fit == 'logo' %} system__figure--logo{% endif %}">
+          <img src="{{ s.image | prepend: '/assets/img/' | relative_url }}" alt="{{ s.image_alt | default: s.title }}" loading="lazy">
+        </div>
+        {%- endif -%}
         {%- if s.silhouette -%}
         <div class="system__sil" role="img" aria-label="Silhouette of {{ s.silhouette_of | default: s.title }}"
              style="--sil: url('{{ s.silhouette | prepend: '/assets/img/phylopic/' | relative_url }}'){% if s.silhouette_scale %}; --sil-scale: {{ s.silhouette_scale }}{% endif %}"></div>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" role="img" aria-label="A parent–offspring trio: two parental chromosomes recombine in the offspring, which also carries one new mutation">
+  <g fill="none" stroke="#9a9a9a" stroke-width="1.6">
+    <line x1="62" y1="22" x2="158" y2="22"/>
+    <line x1="110" y1="22" x2="110" y2="66"/>
+  </g>
+  <!-- parents -->
+  <circle cx="62" cy="22" r="13" fill="#c96a2c"/>
+  <rect x="145" y="9" width="26" height="26" rx="4" fill="#5e93a3"/>
+  <!-- offspring -->
+  <circle cx="110" cy="80" r="13" fill="#e39a2e"/>
+  <!-- parental chromosomes -->
+  <rect x="36" y="42" width="52" height="7" rx="3.5" fill="#c96a2c"/>
+  <rect x="132" y="42" width="52" height="7" rx="3.5" fill="#5e93a3"/>
+  <!-- offspring chromosome: recombinant, with a de novo mutation -->
+  <rect x="84" y="101" width="27" height="7" rx="3.5" fill="#c96a2c"/>
+  <rect x="109" y="101" width="27" height="7" rx="3.5" fill="#5e93a3"/>
+  <rect x="122" y="97" width="3" height="15" rx="1.5" fill="#b23a1a"/>
+  <line x1="110.5" y1="99" x2="110.5" y2="110" stroke="#ffffff" stroke-width="1.2"/>
+</svg>

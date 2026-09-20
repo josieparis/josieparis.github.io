@@ -15,6 +15,8 @@
 #              a PhyloPic SVG in assets/img/phylopic/, the taxon it depicts, the
 #              artist, and the PhyloPic page — rendered as an icon + a credit line.
 #     silhouette_scale: shrink a wide shape (fish!) relative to the others, e.g. 0.7 (optional)
+#     image / image_alt: a picture instead of a silhouette — a file under assets/img/ (optional)
+#     image_fit: logo — draw the image smaller, for wordmarks (optional)
 #     silhouette_license / silhouette_license_url: set these only when the image is
 #              NOT public domain (e.g. CC BY); the credit line then names the artist.
 #     link:    site path to a write-up page, e.g. /projects/guppies/ (optional)
@@ -289,10 +291,14 @@
   title: Methods and training
   systems:
     - title: "Lost in parameter space: a road map for Stacks"
+      image: methods/stacks-figure.png
+      image_alt: Number of new polymorphic loci added at each Stacks -M value, for three RAD-seq datasets
       url: https://doi.org/10.1111/2041-210X.12775
       link_text: Methods in Ecology and Evolution
 
     - title: AF-vapeR
+      image: methods/afvaper-figure.png
+      image_alt: Allele-frequency change vectors that are parallel, anti-parallel, non-parallel, multi-parallel or divergent
       blurb: >-
         A multivariate genome scan for detecting parallel evolution from allele-frequency
         change vectors, with Jim Whiting.
@@ -303,10 +309,14 @@
           url: https://github.com/JimWhiting91/afvaper
 
     - title: The power of trios
+      image: methods/trios.svg
+      image_alt: A parent–offspring trio with a recombinant chromosome and a new mutation
       blurb: Using parent–offspring trios to infer population-genetic parameters in non-model species.
       current: true
 
     - title: Small reusable tools
+      image: methods/genotype-plot.svg
+      image_alt: A genotype plot
       blurb: >-
         GenotypePlot for visualising genotypes across a genomic region, and gatk-snp-calling
         for running GATK as PBS/SLURM arrays.
@@ -317,6 +327,9 @@
           url: https://github.com/josieparis/gatk-snp-calling
 
     - title: Workshop on Genomics
+      image: methods/evomics-logo.png
+      image_alt: evomics
+      image_fit: logo
       blurb: >-
         Director of the two-week international workshop in Český Krumlov (2023–2026), and
         author of the Genomics Adventure teaching materials.
