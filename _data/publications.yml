@@ -28,36 +28,36 @@ pipeline:
 in_review:
   - authors: "Hukkanen M, Jarman S, Budd A, Nitta Fernandes FA, Ambrosini R, et al. (incl. Paris JR)"
     title: "The BEAC, an epigenetic clock for birds"
-    venue: "In review at Nature Ecology & Evolution"
+    venue: "In review"
     preprint: "https://doi.org/10.64898/2026.08.14.744821"
 
   - authors: "Paris JR, Abueg L, Pelan S, Sims Y, Tilley T, Mountcastle J, Balacco J, O'Toole B, Fedrigo O, Formenti G, Jarvis ED, Canestrelli D, Salvi D"
     title: "Chromosome-level genome assembly of the European leaf-toed gecko, Euleptes europaea"
-    venue: "In review at Scientific Data"
+    venue: "In review"
     preprint: "https://doi.org/10.64898/2026.08.10.744031"
 
   - authors: "Formenti G, Absolon DE, Abueg LAL, Ackerman F, Al-Ajli FO, Aleixo A, et al. (incl. Paris JR)"
     title: "The Vertebrate Genomes Project Phase I: a global reference genome resource"
-    venue: "In review at Nature"
+    venue: "In review"
     preprint: "https://doi.org/10.64898/2026.06.24.732306"
 
   - authors: "Osmond DR, Paris JR, Ferrer Obiol J, Whiting JR, Bruford MW, Stevens JR"
     title: "Forging together: parallel adaptation to minewater pollution in brown trout (Salmo trutta L.)"
-    venue: "In review at Genome Biology & Evolution"
+    venue: "In review"
     preprint: "https://doi.org/10.64898/2026.06.09.731039"
 
   - authors: "Ruegg K, Bossu CM, Paris JR, Goljani Amirkhiz R, Goel N, Brown TM, Bernier K, Robertson E, Vernasco BJ, Bolton PE, Funk ER, Taylor SA, Hooten MB, Zavaleta ES"
     title: "Loss of adaptive capacity drives climate vulnerability across taxonomic scales in an alpine specialist species complex"
-    venue: "In review at PNAS"
+    venue: "In review"
 
   - authors: "Uren Webster TM, Laing LV, Onime J, Littler H, McFarling RJ, Paris JR, Fitzgerald JA, Lange A, Farbos A, Moore KA, Hitchings MD, van Aerle R, Bury NR, Santos EM"
     title: "Developmental priming increases copper tolerance in a model fish species via epigenetic- and microbiome-mediated mechanisms"
-    venue: "In review at Environmental Science & Technology"
+    venue: "In review"
     preprint: "https://doi.org/10.1101/2025.11.28.691212"
 
   - authors: "Kirk EM, Baker Z, Moreira C, Paris JR, Liu L, Saunders T, Lewis C, Kille P, Ellis RP, Tills O, Santos M"
     title: "Integrating multi-omics into ecotoxicology: a conceptual framework illustrated using Daphnia as a model system"
-    venue: "In review at Environmental Science & Technology"
+    venue: "In review"
 
 published:
   # --- 2026 ---------------------------------------------------------------

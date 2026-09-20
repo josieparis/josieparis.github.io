@@ -36,7 +36,7 @@ lede: Peer-reviewed papers, preprints, and work in progress.
 <section class="pub-section">
   <h2 class="pub-section__title">In review</h2>
   <ol class="pubs">
-    {%- for pub in in_review -%}{% include pub.html pub=pub %}{%- endfor -%}
+    {%- for pub in in_review -%}{% include pub.html pub=pub hide_venue=true %}{%- endfor -%}
   </ol>
 </section>
 {%- endif -%}

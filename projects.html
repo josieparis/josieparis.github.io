@@ -8,7 +8,7 @@ permalink: /projects/
 
 <nav class="theme-nav" aria-label="Themes">
   {%- for theme in site.data.themes -%}
-  <a class="theme-nav__link" href="#{{ theme.id }}">{{ theme.title }}</a>
+  <a class="theme-pill" data-colour="{{ theme.colour }}" href="#{{ theme.id }}">{{ theme.title }}</a>
   {%- endfor -%}
 </nav>
 

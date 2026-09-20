@@ -2,7 +2,7 @@
   <p class="pub__cite">
     <span class="pub__authors">{{ include.pub.authors | replace: 'Paris JR', '<b>Paris JR</b>' }}</span>
     <span class="pub__title">{{ include.pub.title }}.</span>
-    {%- if include.pub.venue %} <span class="pub__venue">{{ include.pub.venue }}.</span>{% endif -%}
+    {%- if include.pub.venue and include.hide_venue != true %} <span class="pub__venue">{{ include.pub.venue }}.</span>{% endif -%}
   </p>
 
   {%- if include.pub.doi or include.pub.preprint or include.pub.url or include.status -%}

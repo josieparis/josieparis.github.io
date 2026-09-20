@@ -19,6 +19,13 @@
   --accent-ink:  #8b0000;
   --accent-soft: #faedec;
 
+  /* Theme pill palette (after the Moonrise Kingdom swatches): pastel tint + deep ink per hue */
+  --orange-bg: #f6dfcf; --orange-fg: #8a3d14; --orange-line: #e8b58f;
+  --amber-bg:  #f7e8c3; --amber-fg:  #7a5209; --amber-line:  #e6c778;
+  --sage-bg:   #e2e7dd; --sage-fg:   #3d4d39; --sage-line:   #b9c5b2;
+  --teal-bg:   #d5e6ea; --teal-fg:   #285863; --teal-line:   #9fc3cc;
+  --slate-bg:  #dde2ec; --slate-fg:  #333f5b; --slate-line:  #aeb8cc;
+
   --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: var(--font-body);   /* one family site-wide; headings differ by size/weight only */
 
@@ -42,6 +49,12 @@
     --accent-ink:  #f0a5a2;
     --accent-soft: #2a1717;
     --shadow:      0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px -12px rgb(0 0 0 / 60%);
+
+    --orange-bg: #3a2416; --orange-fg: #f0b48c; --orange-line: #6b3f22;
+    --amber-bg:  #382c12; --amber-fg:  #ecc97a; --amber-line:  #6a5320;
+    --sage-bg:   #272d24; --sage-fg:   #b9c8b0; --sage-line:   #47533f;
+    --teal-bg:   #1d2f34; --teal-fg:   #9fcbd6; --teal-line:   #365861;
+    --slate-bg:  #23293a; --slate-fg:  #b6c1da; --slate-line:  #414c68;
   }
 }
 
@@ -211,31 +224,27 @@ main { min-height: 60vh; padding-bottom: 5rem; }
   .hero__portrait { max-width: 200px; }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  list-style: none; margin: 0 0 4rem; padding: 0;
+.theme-pills {
+  display: flex; flex-wrap: wrap; gap: .55rem;
+  list-style: none; margin: 1.25rem 0 0; padding: 0;
 }
-.card {
-  display: block; height: 100%;
-  padding: 1.4rem 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--line); border-radius: var(--radius);
-  color: inherit; text-decoration: none;
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
+/* Theme pills (home page + projects jump-links). Colour comes from data-colour. */
+.theme-pill {
+  display: inline-block;
+  font-size: .88rem; font-weight: 500; line-height: 1.3;
+  padding: .45rem .95rem; border-radius: 999px;
+  text-decoration: none;
+  background: var(--p-bg, var(--surface)); color: var(--p-fg, var(--ink));
+  border: 1px solid var(--p-line, var(--line));
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
-.card:hover {
-  transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
-  box-shadow: var(--shadow);
-}
-.card__title {
-  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
-  margin: 0 0 .3rem; display: flex; align-items: center; gap: .4rem;
-}
-.card__title::after { content: "→"; color: var(--accent); font-size: .95em; }
-.card__text { margin: 0; color: var(--ink-2); font-size: .95rem; line-height: 1.55; }
+.theme-pill:hover { transform: translateY(-1px); box-shadow: var(--shadow); filter: saturate(1.15); }
+.theme-pill[data-colour="orange"] { --p-bg: var(--orange-bg); --p-fg: var(--orange-fg); --p-line: var(--orange-line); }
+.theme-pill[data-colour="amber"]  { --p-bg: var(--amber-bg);  --p-fg: var(--amber-fg);  --p-line: var(--amber-line); }
+.theme-pill[data-colour="sage"]   { --p-bg: var(--sage-bg);   --p-fg: var(--sage-fg);   --p-line: var(--sage-line); }
+.theme-pill[data-colour="teal"]   { --p-bg: var(--teal-bg);   --p-fg: var(--teal-fg);   --p-line: var(--teal-line); }
+.theme-pill[data-colour="slate"]  { --p-bg: var(--slate-bg);  --p-fg: var(--slate-fg);  --p-line: var(--slate-line); }
 
 /* --- 6. Pages ----------------------------------------------------------- */
 .page-header {
@@ -263,12 +272,6 @@ main { min-height: 60vh; padding-bottom: 5rem; }
   display: flex; flex-wrap: wrap; gap: .5rem;
   margin: 0 0 clamp(2rem, 4vw, 3rem);
 }
-.theme-nav__link {
-  font-size: .88rem; font-weight: 500; text-decoration: none;
-  color: var(--ink-2); background: var(--surface);
-  border: 1px solid var(--line); border-radius: 999px; padding: .35rem .85rem;
-}
-.theme-nav__link:hover { color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
 
 .theme { margin-bottom: clamp(3rem, 7vw, 5rem); scroll-margin-top: 84px; }
 .theme__head {

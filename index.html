@@ -18,29 +18,12 @@ title: Home
         into understanding the dynamics of wild animal populations.
       </p>
       <p class="hero__text">Check out the links below for more info! :)</p>
+
+      <ul class="theme-pills" aria-label="Research themes">
+        {%- for theme in site.data.themes -%}
+        <li><a class="theme-pill" data-colour="{{ theme.colour }}" href="{{ '/projects/' | relative_url }}#{{ theme.id }}">{{ theme.title }}</a></li>
+        {%- endfor -%}
+      </ul>
     </div>
   </div>
 </section>
-
-<div class="wrap">
-  <ul class="cards">
-    <li>
-      <a class="card" href="{{ '/projects/' | relative_url }}">
-        <h2 class="card__title">Projects</h2>
-        <p class="card__text">Past and ongoing work by research theme — adaptation, conservation, genomes, demography, and methods.</p>
-      </a>
-    </li>
-    <li>
-      <a class="card" href="{{ '/publications/' | relative_url }}">
-        <h2 class="card__title">Publications</h2>
-        <p class="card__text">Papers and preprints, plus what is currently in review and in the pipeline.</p>
-      </a>
-    </li>
-    <li>
-      <a class="card" href="{{ '/cv/' | relative_url }}">
-        <h2 class="card__title">CV</h2>
-        <p class="card__text">Academic history, employment, education, grants, awards, and teaching.</p>
-      </a>
-    </li>
-  </ul>
-</div>

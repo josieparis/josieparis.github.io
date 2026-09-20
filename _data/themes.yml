@@ -2,6 +2,7 @@
 # The Projects page: research themes, each with the study systems inside it.
 #
 #   id:        anchor for the jump-links (letters, digits, hyphens)
+#   colour:    pill colour — orange, amber, sage, teal or slate (see main.css)
 #   title:     section heading
 #   intro:     optional one or two sentences under the heading (currently unused)
 #   image:     optional photo beside the heading (currently unused)
@@ -28,6 +29,7 @@
 # ---------------------------------------------------------------------------
 
 - id: adaptation
+  colour: orange
   title: Rapid adaptation to changing environments
   systems:
     - title: Trinidadian guppy colour and adaptation to high- and low-predation environments
@@ -87,6 +89,7 @@
         - https://doi.org/10.1111/eva.13346
 
 - id: conservation
+  colour: sage
   title: Conservation and wildlife genomics
   systems:
     - title: Mule deer and chronic wasting disease
@@ -146,6 +149,7 @@
         - https://doi.org/10.3389/fmars.2020.00157
 
 - id: demography
+  colour: teal
   title: Demography, biogeography and speciation
   systems:
     - title: Mediterranean wall lizards
@@ -178,6 +182,7 @@
         - https://doi.org/10.1111/mec.17552
 
 - id: genomes
+  colour: amber
   title: Reference genome assemblies
   systems:
     - title: King penguin
@@ -273,6 +278,7 @@
       link_text: Genome Biology and Evolution
 
 - id: methods
+  colour: slate
   title: Methods and training
   systems:
     - title: "Lost in parameter space: a road map for Stacks"
